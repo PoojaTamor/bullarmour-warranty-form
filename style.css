@@ -1,0 +1,490 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+    .welcome-header {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+    }
+    .welcome-header h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+.wellcome-body p{
+font-weight: 500;
+color: #282828;
+font-size: 1.3rem;
+
+}
+
+.bullaramer-form-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wellcome-body{
+    padding-top: 70px;
+    background-color: #F2F2F7;
+}
+
+.wellcome-body h1{
+font-weight: 800;
+font-size: 3rem;
+letter-spacing: -0.06em;
+text-transform: uppercase;
+color: #3C3C3C;
+padding-bottom: 80px;
+}
+    .welcome-header img{
+width: 400px;
+    }
+
+
+
+.welcome-card {
+background: #F2F2F7;
+height: 100vh;
+    }
+.btn-check:focus+.btn-outline-secondary, .btn-outline-secondary:focus {
+    box-shadow: none !important;
+}
+    .btn-outline-secondary:hover{
+              background-color: #ffc107 !important; 
+                    border-color: #ffc107 !important;
+                    color: #444444 !important;
+    }
+
+        .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+            width: 40%;
+
+    }
+
+    .btn-option {
+      height:70px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+align-items: center;
+      font-weight: 600;
+font-size: 1rem;
+border: 1px solid #A6A6A6;
+text-decoration: none;
+color: #717171;
+text-align: left;
+transition: all 0.5s;
+    }
+
+    .btn-option:hover,
+    .btn-option:focus {
+      background: #FFD700; /* yellow */
+      color: #000;
+      border-color: #FFD700;
+    }
+/* ========================================================================================warrant============================ */
+    .warranty-outbox{
+        /* height: 100vh; */
+        /* background-color: #000; */
+    }
+.warranty-box-left{
+    height: 100vh;
+    background-color: #F2F2F7;
+    /* padding: 50px; */
+}
+
+.warranty-box-left h1{
+font-weight: 600;
+color: #0E0E0E;
+line-height: 1;
+font-size: 4rem;
+font-family: 'Clash Display', sans-serif;
+font-style: normal;
+font-weight: 600;
+padding-top: 50px;
+padding-right: 50px;
+}
+
+.warranty-box-left p{
+font-weight: 400;
+color: #8E8E8E;
+padding-right: 50px;
+font-size: 1.3rem;
+}
+
+    .corner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 250px;
+      background: #000;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+    }
+ .corner img{
+padding-left: 40px;
+padding-top: 50px;
+ }
+
+ .warranty-box-left .accordion-body{
+    padding-inline: 50px;
+        background-color: #F2F2F7;
+ }
+
+  .warranty-box-left .accordion-button{
+     padding-left: 50px;
+         background-color: #F2F2F7;
+  }
+ .underline-input {
+  border: none;
+  border-bottom: 2px solid #333 !important;
+  border-radius: 0;
+  outline: none;
+  padding-left: 5px;
+  box-shadow: none;
+  /* margin-top: 50px; */
+  font-size: 1.3rem;
+}
+
+ .warranty-box-left .accordion-button::after {
+display: none;
+}
+  .warranty-box-left .accordion-button:not(.collapsed) .svgmhj {
+
+    transform: rotate(-180deg);
+}
+
+  .warranty-box-left .accordion-button:not(.collapsed) {
+    color: #212529;
+    box-shadow: none;
+}
+
+
+
+.servicebtn:not(.collapsed) {
+background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #FFE98F 100%) ;
+}
+  .warranty-box-left .accordion-button:focus {
+    border-color:none;
+    outline: 0;
+    box-shadow: none;
+}
+.underline-input:focus {
+  border-bottom: 2px solid #000;
+  outline: none;
+  box-shadow: none;
+}
+.underline-input::placeholder{
+padding: 0px;
+font-weight: 400;
+font-size: 1.2rem;
+color: #0E0E0E;
+}
+
+/* =====================service===== */
+.service{
+background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #FFE98F 100%) ;
+
+    
+}
+.warrantymain {
+    overflow:scroll;
+    height: 220px;
+
+}
+.accordion-item,
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-collapse {
+  border: none !important;
+  box-shadow: none !important; /* agar shadow aa rahi ho to */
+}
+
+.warrantymain::-webkit-scrollbar {
+  display: none;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.underline-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  width: 100%;
+  padding: 6px 0;
+  outline: none;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-top: 0px;
+
+}
+
+.chosservice-box .options input[type="radio"] {
+  display: none;
+ 
+
+
+}
+
+.options label {
+  border: 2px solid #FCCD10;
+  padding: 6px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #FFE98F;
+
+
+}
+
+.chosservice-box .options input[type="radio"]:checked + label{
+  background: #000;
+  color: #fff;
+
+}
+
+.servicelabel{
+line-height: 1;
+font-weight: 500;
+font-size: 1.5rem;
+color: #0E0E0E;
+}
+
+.chosservice-box{
+    padding-block: 30px;
+}
+
+.checkboxservice{
+
+}
+
+  .checkboxservice input[type="radio"] {
+      display: none;
+    }
+    /* Custom checkbox style */
+ .checkboxservice  .custom-radio {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+.checkboxservice   input[type="radio"]:checked + .custom-radio::after {
+    content: "✓";
+    position: absolute;
+    top: -2px;
+    left: 8px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+}
+ .checkboxservice   .dropdown {
+      display: none;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+   .fullcover-box   .option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-size: 1.3rem;
+      font-weight: 500;
+
+
+    }
+    .fullcover-box  select {
+    background-color: transparent;
+    width: 300px;
+    margin-left: 50px;
+    word-wrap: normal;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 0px 10px 10px 5px;
+    font-size: 1.2rem;
+    color: #444444;
+    font-weight: 500;
+        appearance: none;          
+      -webkit-appearance: none;      
+      -moz-appearance: none;
+     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11' fill='none'><path d='M5.82116 10.7114L0.439263 0.718333L11.2031 0.718332L5.82116 10.7114Z' fill='%230E0E0E'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px 11px;
+}
+select:focus {
+      outline: none;
+      border-color: #000;
+    }
+
+    .fullcover-year{
+        justify-content: space-between;
+    }
+
+/* =====================================================================================right=============================== */
+
+.warranty-box-right{
+    height: 100vh;
+    background-color: #282828;
+}
+
+.warranty-box-right .servicelabel{
+    color: #fff;
+    /* font-size: 1.2rem; */
+}
+
+ .warranty-box-right   select, input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-size: 14px;
+    }
+
+ .warranty-box-right   select option {
+      color: #000;
+    }
+
+    /* File upload */
+
+
+ .warranty-box-right   .file-upload input[type="file"] {
+      background: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+ .warranty-box-right   .file-upload small {
+      display: block;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    /* Amount input */
+  .warranty-box-right  .amount-box {
+      display: flex;
+      align-items: center;
+      background: #eee;
+      border-radius: 6px;
+      padding: 5px 10px;
+      margin-bottom: 15px;
+    }
+
+
+ .warranty-box-right   .amount-box span {
+      margin-right: 5px;
+      color: #000;
+    }
+
+  .warranty-box-right  .amount-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 14px;
+      flex: 1;
+      color: #000;
+    }
+
+    /* Checkbox */
+ .warranty-box-right   .checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .agree{
+      color: #fff;  
+      font-size: 0.8rem;
+    }
+ .warranty-box-right   .checkbox input {
+      margin-right: 8px;
+    }
+
+    /* Submit button */
+ .warranty-box-right   .submit-btn {
+      background: #FFD400;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+   .warranty-box-right .submit-btn:hover {
+      background: #e6bd00;
+    }
+
+      /* Hide default input */
+    input[type="file"] {
+      display: none;
+    }
+
+    /* Custom button */
+    .file-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #e6e6e6;
+      color: #000;
+      padding: 8px 15px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      transition: background 0.2s;
+    }
+
+    .file-label:hover {
+      background: #d9d9d9;
+    }
+
+    /* Small upload arrow icon */
+    .file-label svg {
+      width: 16px;
+      height: 16px;
+    }
