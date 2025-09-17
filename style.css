@@ -100,6 +100,9 @@ transition: all 0.5s;
       color: #000;
       border-color: #FFD700;
     }
+    .headingtext{
+      position: relative;
+    }
 /* ========================================================================================warrant============================ */
     .warranty-outbox{
         /* height: 100vh; */
@@ -107,8 +110,31 @@ transition: all 0.5s;
     }
 .warranty-box-left{
     height: 100vh;
-    background-color: #F2F2F7;
+overflow: scroll;
+   background-color: #F2F2F7;
     /* padding: 50px; */
+}
+.warranty-box-left::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color:none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.nav-link {
+    padding: 0rem ;
+    color:#0E0E0E;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color:transparent !important;
+    isolation: isolate;
+       color:#0E0E0E;
 }
 
 .warranty-box-left h1{
@@ -209,11 +235,11 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
 
     
 }
-.warrantymain {
+/* .warrantymain {
     overflow:scroll;
     height: 220px;
 
-}
+} */
 .accordion-item,
 .accordion-button,
 .accordion-button:not(.collapsed),
@@ -222,9 +248,7 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
   box-shadow: none !important; /* agar shadow aa rahi ho to */
 }
 
-.warrantymain::-webkit-scrollbar {
-  display: none;
-}
+
 
 .form-label {
   display: block;
@@ -241,7 +265,7 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
   outline: none;
 }
 
-.options {
+.butanoption {
   display: flex;
   flex-wrap: wrap;
   gap: 17px;
@@ -249,14 +273,14 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
 
 }
 
-.chosservice-box .options input[type="radio"] {
+.chosservice-box .butanoption input[type="radio"] {
   display: none;
  
 
 
 }
 
-.options label {
+.butanoption label {
   border: 2px solid #FCCD10;
   padding: 6px 35px;
   border-radius: 20px;
@@ -269,11 +293,15 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
 
 }
 
-.chosservice-box .options input[type="radio"]:checked + label{
+.chosservice-box .butanoption input[type="radio"]:checked + label{
   background: #000;
   color: #fff;
 
 }
+/* .butanoption input[type="radio"]:checked + label {
+  background: #000;
+  color: #fff;
+} */
 
 .servicelabel{
 line-height: 1;
