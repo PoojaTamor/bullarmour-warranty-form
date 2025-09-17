@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="./style.css">
 <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
-    <title> form </title>
+    <title> Warranty Form </title>
   </head>
   <body>
 
@@ -19,8 +19,8 @@
     <div class="col-8 warranty-box-left  ">
     <div class="row">
     <div class="col">
-            <div class="corner"><img src="./b_logo.svg" alt=""></div>
       <div class="p-3 text-end  headingtext">
+        <div class="corner"><img src="./b_logo.svg" alt=""></div>
         <h1>WARRANTY  <br>CARD</h1>
         <p>Fill your details to apply for the warranty</p>
       </div>
@@ -70,54 +70,131 @@
   
       <!-- Date of Service -->
       <div class="mb-4 col-5">
-        <label class="form-label servicelabel" >Select Date of service</label> <br>
+        <label class="form-label servicelabel" >Date of service</label> <br>
         <input type="date" class="underline-input" />
       </div>
+
+
+<!-- -------------bar=--------- -->
+
+
+
+<!-- -------------bar=--------- -->
 
       <!-- Choose Service -->
       <div class="chosservice-box">
         <label class="form-label servicelabel">Choose the service</label>
         <div class="options mt-4 ">
-          <input type="radio" id="ppf" name="service" checked>
+    <!-- Main Tabs -->
+    <ul class="nav nav-tabs border-0 mb-3 butanoption " id="serviceTabs" role="tablist">
+
+      <!-- -------------------ppf------------- -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="ppf-tab" data-bs-toggle="tab" data-bs-target="#ppf-pane" type="button" role="tab">
+         <input type="radio" id="ppf" name="service" >
           <label for="ppf">PPF</label>
+        </button>
+      </li>
 
-          <input type="radio" id="ceramic" name="service">
-          <label for="ceramic">Ceramic</label>
 
-          <input type="radio" id="graphene" name="service">
+      <!-- -------------------Ceramic------------- -->
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="ceramic-tab" data-bs-toggle="tab" data-bs-target="#ceramic-pane" type="button" role="tab">   <input type="radio" id="ceramic" name="service">
+          <label for="ceramic">Ceramic</label></button>
+      </li>
+
+
+      <!-- -------------------Graphene------------- -->
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="graphene-tab" data-bs-toggle="tab" data-bs-target="#graphene-pane" type="button" role="tab">  
+           <input type="radio" id="graphene" name="service">
           <label for="graphene">Graphene</label>
-        </div>
-      </div>
+        </button>
+      </li>
+    </ul>
 
-      <!-- Type of PPF -->
-      <div class="mb-4 chosservice-box">
-        <label class="form-label servicelabel">What's the type of PPF</label>
-        <div class="options mt-5 col-8">
-          <input type="radio" id="gp" name="ppf">
-          <label for="gp">Gloss Pro</label>
+    <!-- Tab Content -->
+      <div class="tab-content">
+        <!-- PPF Options -->
+        <div class="tab-pane fade show active" id="ppf-pane" role="tabpanel">
+          <!-- Sub Tabs for PPF -->
+          <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ppfSubTabs" role="tablist">
+            <li class="nav-item">
+              <button class="nav-link active" id="gloss-tab" data-bs-toggle="tab" data-bs-target="#gloss-pane" type="button" role="tab">    <input type="radio" id="Gloss" name="service">
+          <label for="Gloss">Gloss</label></button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="matte-tab" data-bs-toggle="tab" data-bs-target="#matte-pane" type="button" role="tab">  <input type="radio" id="Matte" name="service">
+          <label for="Matte">Matte</label></button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="colored-tab" data-bs-toggle="tab" data-bs-target="#colored-pane" type="button" role="tab"> <input type="radio" id="Colored" name="service">
+          <label for="Colored">Colored</label></button>
+            </li>
+          </ul>
 
-          <input type="radio" id="gpp" name="ppf">
-          <label for="gpp">Gloss Prime Plus</label>
-
-          <input type="radio" id="gperf" name="ppf">
-          <label for="gperf">Gloss Performance</label>
-
-          <input type="radio" id="gperfplus" name="ppf">
-          <label for="gperfplus">Gloss Performance Plus</label>
-
-          <input type="radio" id="mpp" name="ppf">
-          <label for="mpp">Matte Prime Plus</label>
-
-          <input type="radio" id="mp" name="ppf">
-          <label for="mp">Matte Performance</label>
-
-          <input type="radio" id="cp" name="ppf">
-          <label for="cp">Colored Performance</label>
-        </div>
-      </div>
+          <!-- Sub Tab Content -->
+          <div class="tab-content  butanoption">
+            <!-- Gloss Options -->
+            <div class="tab-pane fade show active" id="gloss-pane" role="tabpanel">
+              <ul class="nav nav-tabs border-0 mb-3 butanoption" id="glossOptions" role="tablist">
+                <li class="nav-item"><input type="radio" id="Pro" name="Subservice">
+          <label for="Pro">Pro</label></li>
+                <li class="nav-item"><input type="radio" id="PrimePlus " name="Subservice">
+          <label for="PrimePlus ">Prime Plus </label></li>
+                <li class="nav-item"> <input type="radio" id="Performance " name="Subservice">
+          <label for="Performance ">Performance </label></li>
+          <li class="nav-item"><input type="radio" id="PerformancePlus  " name="Subservice">
+          <label for="PerformancePlus  ">Performance Plus  </label></li>
+              </ul>
 
 
 
+            </div>
+
+          <!-- Matte Options -->
+<div class="tab-pane fade" id="matte-pane" role="tabpanel">
+  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="matteOptions" role="tablist">
+    <li class="nav-item">
+    
+        <input type="radio" id="MattePrimePlus" name="Subservice">
+        <label for="MattePrimePlus">Prime Plus</label>
+  
+    </li>
+    <li class="nav-item">
+    
+        <input type="radio" id="MattePerformance" name="Subservice">
+        <label for="MattePerformance">Performance</label>
+  
+    </li>
+  </ul>
+</div>
+
+<!-- Colored Options -->
+<div class="tab-pane fade" id="colored-pane" role="tabpanel">
+  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="coloredOptions" role="tablist">
+    <li class="nav-item">
+   
+        <input type="radio" id="Colored9PrimePlus" name="Subservice">
+        <label for="Colored9PrimePlus">Prime Plus</label>
+
+    </li>
+    <li class="nav-item">
+  
+        <input type="radio" id="ColoredPerformance" name="Subservice">
+        <label for="ColoredPerformance">Performance</label>
+
+    </li>
+  </ul>
+</div>
+
+          </div>
+
+
+          <div>
+  
           <div class="mb-4 checkboxservice">
         <label class="form-label servicelabel">What's the type of PPF</label>
         <div class=" d-flex fullcover-box  mt-3">
@@ -153,7 +230,7 @@
 
 
 
-
+<!-- 
      <div class="mb-4 checkboxservice">
         <label class="form-label servicelabel">What's the type of PPF</label>
         <div class="  mt-5  fullcover-box  fullcover-year d-flex">
@@ -187,7 +264,30 @@
 
 
         </div>
+      </div> -->
+</div>
+        </div>
+
+
+        <!-- Ceramic Options -->
+        <div class="tab-pane fade" id="ceramic-pane" role="tabpanel">
+          <p>Ceramic options here...</p>
+        </div>
+
+        <!-- Graphene Options -->
+        <div class="tab-pane fade" id="graphene-pane" role="tabpanel">
+          <p>Graphene options here...</p>
+        </div>
       </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
   </div>
       </div>
     </div>
