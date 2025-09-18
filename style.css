@@ -3,8 +3,8 @@
 
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0px ;
+    padding: 0px ;
     box-sizing: border-box;
      font-family: "Poppins", sans-serif;
 }
@@ -16,7 +16,7 @@
       padding: 40px 20px;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center;  
       height: 250px;
     }
     .welcome-header h2 {
@@ -110,9 +110,11 @@ transition: all 0.5s;
     }
 .warranty-box-left{
     height: 100vh;
-overflow: scroll;
+  overflow-y: scroll; 
    background-color: #F2F2F7;
     /* padding: 50px; */
+        /* overflow-x: hidden; */
+        /* border: 1px solid #000; */
 }
 .warranty-box-left::-webkit-scrollbar {
   display: none;
@@ -261,7 +263,7 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
   border-bottom: 1px solid #000;
   background: transparent;
   width: 100%;
-  padding: 6px 0;
+  padding: 6px 10px;
   outline: none;
 }
 
@@ -273,6 +275,9 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
 
 }
 
+.arrdress{
+  margin-top: 20px;
+}
 .chosservice-box .butanoption input[type="radio"] {
   display: none;
  
@@ -394,6 +399,15 @@ select:focus {
     color: #fff;
     /* font-size: 1.2rem; */
 }
+ .warranty-box-left   select, input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      color: #000;
+
+    }
 
  .warranty-box-right   select, input[type="text"], input[type="number"] {
       width: 100%;
@@ -402,7 +416,7 @@ select:focus {
       border: none;
       border-bottom: 1px solid #fff;
       color: #fff;
-      font-size: 14px;
+
     }
 
  .warranty-box-right   select option {
@@ -515,4 +529,240 @@ select:focus {
     .file-label svg {
       width: 16px;
       height: 16px;
+    }
+
+        #selectedTags{
+
+        }
+    .selected-tags .tag{
+      display:inline-block;
+  border: 2px solid #FCCD10;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 5px 1px;
+  background-color: #FFE98F;
+
+    }
+    .selecting{
+      background-color: transparent !important;
+      border: none;
+border-bottom: 2px solid #000;
+border-radius: 0;
+width: 200px !important;
+font-size: 1.2rem;
+color: #444444;
+    }
+     
+      .selecting:hover{
+border-bottom: 2px solid #000;
+
+      }
+      .btn-check:focus+.btn-warning, .btn-warning:focus {
+    color: #000;
+    background-color: #ffca2c;
+    border-color: #000;
+    box-shadow: none !important;
+}
+
+.dateand-servicelocation .form-select{
+background-color: transparent;
+border: none;
+border-bottom: 2px solid #000;
+       appearance: none;          
+      -webkit-appearance: none;      
+      -moz-appearance: none;
+     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11' fill='none'><path d='M5.82116 10.7114L0.439263 0.718333L11.2031 0.718332L5.82116 10.7114Z' fill='%230E0E0E'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px 11px;
+      font-size: 1.2rem
+
+}
+.form-select{
+  border-radius: 0px;
+}
+.form-select:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+.dateand-servicelocation .dateinput{
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0px;
+    color: #000;
+      font-size: 1.2rem
+
+    
+}
+
+ .warranty-box-left .form-control:focus {
+    background-color:transparent;
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+ .warranty-box-right .form-control:focus{
+   background-color:transparent;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+   outline: none;
+ }
+ .dateand-servicelocation #OtherStore{
+  color: #000;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #000;
+ }
+   .warranty-box-right input[type="text"]::placeholder{
+color: #fff;
+   }
+
+  
+  .caredetailsbtn:not(.collapsed) {
+  background-color:#282828 ;
+
+color: #fff !important;
+}
+ .caredetailsbtn:not(.collapsed)  svg path{
+  fill: #fff !important;
+ }
+
+ .caredetails .accordion-body{
+  background-color: #282828;
+ }
+
+
+.svg1{
+  margin-left: 20px;
+}
+
+.svg2{
+  margin-left: 30px;
+}
+
+.svg3{
+  margin-left:75px;
+}
+   @media (max-width: 977px) {
+    .warranty-box-right {
+    height: unset;
+    background-color: #282828;
+}
+   }
+
+
+     @media (max-width: 500px) {
+      .corner img {
+    width: 50px;
+    padding-left: 22px;
+    padding-top: 34px;
+}
+.corner {
+    width: 150px;
+    height: 150px;
+
+}
+.warranty-box-left h1 {
+    font-size: 2rem;
+    padding-top: 41px;
+    padding-right: 13px;
+}
+.warranty-box-left p {
+    font-weight: 400;
+    color: #8E8E8E;
+     padding-right: 13px;
+    font-size: 0.7rem;
+    line-height: 1;
+}
+.warranty-box-left .accordion-button {
+    padding-left: 30px;
+}
+.warranty-box-left .accordion-body {
+    padding-inline: 30px;
+}
+.warranty-box-left .accordion-button  h3{
+font-size: 1.2rem;
+}
+.butanoption {
+    gap: 2px;
+}
+.butanoption label {
+    padding: 3px 15px;
+    font-size: 0.8rem;
+}
+.servicelabel {
+    font-size: 1rem;
+}
+.checkboxservice  .custom-radio {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.fullcover-box   .option {
+    font-size: 0.9rem;
+}
+.checkboxservice   input[type="radio"]:checked + .custom-radio::after {
+    top: -2px;
+    left: 5px;
+    font-size: 16px;
+}
+.selecting {
+    width: 140px !important;
+    font-size: 0.9rem;
+}
+.selected-tags .tag {
+    padding: 3px 10px;
+    font-size: 0.7rem;
+    margin: 5px 1px;
+}
+.warranty-box-right   .file-upload small {
+    margin-top: 8px;
+    font-size: 8px;
+}
+.agree {
+    color: #fff;
+    font-size: 0.6rem;
+}
+.warranty-box-right   .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+     }
+     .warranty-box-right input[type="number"] {
+    padding: 4px;
+    font-size: 14px;
+}
+.underline-input::placeholder{
+padding: 0px;
+font-weight: 400;
+font-size: 0.9rem;
+color: #0E0E0E;
+}
+
+.svg1 , .svg2 ,.svg3 {
+width: 10px;
+     }
+     .svg3{
+      margin-left: 65px;
+     }
+     .dateand-servicelocation .form-select {
+    font-size: 0.9rem;
+        background-position: right 0px center;
+    background-size: 9px 10px;
+}
+.dateand-servicelocation .dateinput {
+    font-size: 0.9rem;
+
+}
+
+.chosservice-box {
+    padding-block: 4px;
+}
     }
