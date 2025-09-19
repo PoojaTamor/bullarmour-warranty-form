@@ -868,4 +868,14 @@ width: 10px;
     text-decoration: none;
     background-color: rgb(47, 47, 45);
 }
+
+.cardetalibody input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+}
     }
