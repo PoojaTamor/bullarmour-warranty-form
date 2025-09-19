@@ -810,4 +810,8 @@ width: 10px;
 .btn-option {
     height: 60px;
 }
+    .fullcover-year{
+        justify-content: unset;
+    }
+
     }
