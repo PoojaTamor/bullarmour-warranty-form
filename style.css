@@ -655,6 +655,13 @@ color: #fff !important;
     height: unset;
     background-color: #282828;
 }
+.btn-group {
+    gap: 12px;
+    width: 70%;
+}
+.wellcome-body {
+    padding-top: 150px;
+}
    }
 
 
@@ -770,5 +777,37 @@ width: 10px;
     font-size: 0.9rem;
     margin-bottom: 20px;
 }
+.welcome-header img {
+    width: 250px;
+}
+.welcome-header h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
 
+.wellcome-body {
+    padding-top: 50px;
+}
+.wellcome-body h1 {
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+.wellcome-body p {
+    font-size: 1.1rem;
+}
+.welcome-header {
+    height: 200px;
+}
+.btn-option {
+    height: 70px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+.btn-group {
+    width: 100%;
+}
+.btn-option {
+    height: 60px;
+}
     }
