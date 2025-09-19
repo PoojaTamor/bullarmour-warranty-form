@@ -41,19 +41,19 @@
       <div class="accordion-body">
       <div class="row mb-3 gy-3">
       <div class="col-md-6">
-        <input type="text" class="form-control underline-input" id="fullname" placeholder="Full Name">
+        <input type="text" class="form-control underline-input" name="name" id="fullname" placeholder="Full Name" >
       </div>
       <div class="col-md-6">
-        <input type="text" class="form-control underline-input" id="phone" placeholder="Phone no">
+        <input type="number" class="form-control underline-input" name="phone_number" id="phone" placeholder="Phone no" >
       </div>
     </div>
 
     <div class="my-md-4 ">
-      <input type="email" class="form-control underline-input" id="email" placeholder="Email">
+      <input type="email" class="form-control underline-input"   name="email" id="email" placeholder="Email" >
     </div>
 
     <div class="mb-md-3 arrdress">
-      <input type="text" class="form-control underline-input" id="address" placeholder="Address">
+      <input type="text" class="form-control underline-input" id="address" name="address" placeholder="Address">
     </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
       <div class="d-flex  dateand-servicelocation">
               <div class="">
                  <label class="form-label servicelabel">service Outlate</label>
-     <select id="Store" class="form-select" required>
+     <select id="Store" class="form-select" >
   <option value="" disabled selected>Select Store</option>
 </select>
 
@@ -133,43 +133,53 @@
     </ul>
 
     <!-- Tab Content -->
-      <div class="tab-content">
+      <div class="tab-content ">
         <!-- PPF Options -->
         <label class="form-label servicelabel my-3">Hardness type</label>
 
-        <div class="tab-pane fade show active" id="ppf-pane" role="tabpanel">
+        <div class="tab-pane fade show active " id="ppf-pane" role="tabpanel">
           <!-- Sub Tabs for PPF -->
-          <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ppfSubTabs" role="tablist">
-            <li class="nav-item">
-              <button class="nav-link active" id="gloss-tab" data-bs-toggle="tab" data-bs-target="#gloss-pane" type="button" role="tab">    <input type="radio" id="Gloss" name="service">
-          <label for="Gloss">Gloss</label></button>
-            </li>
-            <li class="nav-item">
-              <button class="nav-link" id="matte-tab" data-bs-toggle="tab" data-bs-target="#matte-pane" type="button" role="tab">  <input type="radio" id="Matte" name="service">
-          <label for="Matte">Matte</label></button>
-            </li>
-            <li class="nav-item">
-              <button class="nav-link" id="colored-tab" data-bs-toggle="tab" data-bs-target="#colored-pane" type="button" role="tab"> <input type="radio" id="Colored" name="service">
-          <label for="Colored">Colored</label></button>
-            </li>
-          </ul>
+      <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ppfSubTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="gloss-tab" data-bs-toggle="tab" data-bs-target="#gloss-pane" type="button" role="tab">
+      <input type="radio" id="Gloss" name="Ppfservice" value="Gloss">
+      <label for="Gloss">Gloss</label>
+    </button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="matte-tab" data-bs-toggle="tab" data-bs-target="#matte-pane" type="button" role="tab">
+      <input type="radio" id="Matte" name="Ppfservice" value="Matte">
+      <label for="Matte">Matte</label>
+    </button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="colored-tab" data-bs-toggle="tab" data-bs-target="#colored-pane" type="button" role="tab">
+      <input type="radio" id="Colored" name="Ppfservice" value="Colored">
+      <label for="Colored">Colored</label>
+    </button>
+  </li>
+
+</ul>
+
 
           <!-- Sub Tab Content -->
-            <label class="form-label servicelabel my-4">Select the series</label>
+            <label class="form-label servicelabel my-4">Select the series / years</label>
           <div class="tab-content  butanoption">
             <!-- Gloss Options -->
             
 
             <div class="tab-pane fade show active" id="gloss-pane" role="tabpanel">
               <ul class="nav nav-tabs border-0 mb-3 butanoption" id="glossOptions" role="tablist">
-                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="3 year warranty"><input type="radio" id="Pro" name="Subservice">
+                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="3 year warranty"><input type="radio" id="Pro" name="Subservice" value="Pro">
           <label for="Pro">Pro</label></li>
-                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="5 year warranty"><input type="radio" id="PrimePlus " name="Subservice">
+                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="5 year warranty"><input type="radio" id="PrimePlus " name="Subservice" value="Prime Plus">
           <label for="PrimePlus ">Prime Plus </label></li>
-                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty"> <input type="radio" id="Performance " name="Subservice">
+                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty"> <input type="radio" id="Performance " name="Subservice" value="Performance">
           <label for="Performance ">Performance </label></li>
-          <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty (IH)"><input type="radio" id="PerformancePlus  " name="Subservice">
-          <label for="PerformancePlus  ">Performance Plus  </label></li>
+          <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty (IH)"><input type="radio" id="PerformancePlus  " name="Subservice" value="Performance Plus">
+          <label for="PerformancePlus " >Performance Plus  </label></li>
               </ul>
 
 
@@ -179,15 +189,15 @@
           <!-- Matte Options -->
 <div class="tab-pane fade" id="matte-pane" role="tabpanel">
   <ul class="nav nav-tabs border-0 mb-3 butanoption" id="matteOptions" role="tablist">
-    <li class="nav-item">
+    <li class="nav-item"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="5 year warranty">
     
-        <input type="radio" id="MattePrimePlus" name="Subservice">
+        <input type="radio" id="MattePrimePlus" name="Subservice" value="Prime Plus">
         <label for="MattePrimePlus">Prime Plus</label>
   
     </li>
-    <li class="nav-item">
+    <li class="nav-item"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty">
     
-        <input type="radio" id="MattePerformance" name="Subservice">
+        <input type="radio" id="MattePerformance" name="Subservice" value="Performance">
         <label for="MattePerformance">Performance</label>
   
     </li>
@@ -197,15 +207,15 @@
 <!-- Colored Options -->
 <div class="tab-pane fade" id="colored-pane" role="tabpanel">
   <ul class="nav nav-tabs border-0 mb-3 butanoption" id="coloredOptions" role="tablist">
-    <li class="nav-item">
+    <li class="nav-item"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="5 year warranty">
    
-        <input type="radio" id="Colored9PrimePlus" name="Subservice">
+        <input type="radio" id="Colored9PrimePlus" name="Subservice" value="Prime Plus">
         <label for="Colored9PrimePlus">Prime Plus</label>
 
     </li>
-    <li class="nav-item">
+    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty">
   
-        <input type="radio" id="ColoredPerformance" name="Subservice">
+        <input type="radio" id="ColoredPerformance" name="Subservice" value="Performance">
         <label for="ColoredPerformance">Performance</label>
 
     </li>
@@ -292,20 +302,31 @@
         </div>
 
 
-        <!-- Ceramic Options -->
+<!-- ================= CERAMIC ================= -->
 <div class="tab-pane fade" id="ceramic-pane" role="tabpanel">
 
-  <!-- Ceramic Options -->
-  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ceramicOptions" role="tablist">
+  <!-- Ceramic Main Sub Tabs -->
+  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ceramicSubTabs" role="tablist">
     <li class="nav-item">
-      <input type="radio" id="Ceramic9H" name="Subservice">
-      <label for="Ceramic9H">9H</label>
-    </li>
-    <li class="nav-item">
-      <input type="radio" id="Ceramic10H" name="Subservice">
-      <label for="Ceramic10H">10H</label>
+      <button class="nav-link active" id="ceramic10h-tab" data-bs-toggle="tab" data-bs-target="#ceramic10h-pane" type="button" role="tab">
+        <input type="radio" id="10H" name="ccservice" value="10H">
+        <label for="10H">10H</label>
+      </button>
     </li>
   </ul>
+
+  <!-- Ceramic Sub Tab Content -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="ceramic10h-pane" role="tabpanel">
+      <label class="form-label servicelabel my-3">Select Warranty</label>
+      <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ceramicWarranty" role="tablist">
+        <li class="nav-item"><input type="radio" id="Ceramic1yr" name="Subservice" value="1 Year"><label for="Ceramic1yr">1 Year</label></li>
+        <li class="nav-item"><input type="radio" id="Ceramic3yr" name="Subservice" value="3 Years"><label for="Ceramic3yr">3 Years</label></li>
+        <li class="nav-item"><input type="radio" id="Ceramic5yr" name="Subservice" value="5 Years"><label for="Ceramic5yr">5 Years</label></li>
+        <li class="nav-item"><input type="radio" id="Ceramic7yr" name="Subservice" value="7 Years"><label for="Ceramic7yr">7 Years</label></li>
+      </ul>
+    </div>
+  </div>
 
 <div>
   <div class="mb-4 checkboxservice">
@@ -315,7 +336,7 @@
     <!-- Full Protection -->
     <div>
       <label class="option">
-        <input type="radio" name="protection1" value="full" class="protection-radio">
+        <input type="radio" name="protection1" value="full " class="protection-radio">
         <span class="custom-radio"></span>
         Full Protection
       </label>
@@ -370,6 +391,9 @@
 <!-- 🔲 Other -->
 <li><a class="dropdown-item" href="#" data-value="Headlights">Headlights</a></li>
 <li><a class="dropdown-item" href="#" data-value="Taillights">Taillights</a></li>
+<li><a class="dropdown-item" href="#" data-value="Glass">Glass</a></li>
+<li><a class="dropdown-item" href="#" data-value="Sunroof">Sunroof</a></li>
+<li><a class="dropdown-item" href="#" data-value="Alloy Wheels">Alloy</a></li>
 
           <li><a class="dropdown-item other-option" href="#" data-value="Other">Other</a></li>
         </ul>
@@ -381,138 +405,116 @@
 </div>
 
 </div>
-  <!-- Warranty -->
-  <div class="mb-4 checkboxservice">
-    <label class="form-label servicelabel">Warranty</label>
-    <div class="mt-5 fullcover-box fullcover-year d-flex flex-wrap gap-3">
-      <label class="option"><input type="radio" name="warranty" value="1"><span class="custom-radio"></span>1 year</label>
-      <label class="option"><input type="radio" name="warranty" value="3"><span class="custom-radio"></span>3 years</label>
-      <label class="option"><input type="radio" name="warranty" value="5"><span class="custom-radio"></span>5 years</label>
-      <label class="option"><input type="radio" name="warranty" value="7"><span class="custom-radio"></span>7 years</label>
-      <label class="option"><input type="radio" name="warranty" value="10"><span class="custom-radio"></span>10 years</label>
-    </div>
-  </div>
+
+
 
 </div>
 
-        <!-- Graphene Options -->
-     <div class="tab-pane fade" id="graphene-pane" role="tabpanel">
-  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="grapheneOptions" role="tablist">
+<!-- ================= GRAPHENE ================= -->
+<div class="tab-pane fade" id="graphene-pane" role="tabpanel">
+
+  <!-- Graphene Main Sub Tabs -->
+  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="grapheneSubTabs" role="tablist">
     <li class="nav-item">
-      <input type="radio" id="Graphene9H" name="Subservice">
-      <label for="Graphene9H">9H</label>
-    </li>
-    <li class="nav-item">
-      <input type="radio" id="Graphene10H" name="Subservice">
-      <label for="Graphene10H">10H</label>
+      <button class="nav-link active" id="graphene10h-tab" data-bs-toggle="tab" data-bs-target="#graphene10h-pane" type="button" role="tab">
+        <input type="radio" id="Graphene10H" name="grservice" value="10H">
+        <label for="Graphene10H">10H</label>
+      </button>
     </li>
   </ul>
 
-<div>
-
-
-<div>
-  <div class="mb-4 checkboxservice">
-  <label class="form-label servicelabel my-md-5 my-3">Coverage area</label>
-  <div class="d-md-flex fullcover-box mt-3 align-items-start">
-
-    <!-- Full Protection -->
-    <div>
-      <label class="option">
-        <input type="radio" name="protection1" value="full" class="protection-radio">
-        <span class="custom-radio"></span>
-        Full Protection
-      </label>
+  <!-- Graphene Sub Tab Content -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="graphene10h-pane" role="tabpanel">
+      <label class="form-label servicelabel my-3">Select Warranty</label>
+      <ul class="nav nav-tabs border-0 mb-3 butanoption" id="grapheneWarranty" role="tablist">
+        <li class="nav-item"><input type="radio" id="Graphene5yr" name="Subservice" value="5 Years"><label for="Graphene5yr">5 Years</label></li>
+        <li class="nav-item"><input type="radio" id="Graphene10yr" name="Subservice" value="10 Years"><label for="Graphene10yr">10 Years</label></li>
+      </ul>
     </div>
-
-    <!-- Partial Protection + Dropdown -->
-    <div class="ms-md-5">
-      <label class="option">
-        <input type="radio" name="protection1" value="partial" class="protection-radio">
-        <span class="custom-radio"></span>
-        Partial Protection
-      </label>
-
-      <div class="dropdown mt-2 parts-dropdown" style="display:none;">
-        <button class="btn btn-warning dropdown-toggle w-100 d-flex justify-content-between align-items-center selecting"
-                type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-          Select Parts
-        </button>
-        <ul class="dropdown-menu parts-list">
-
-<!-- 🚪 Doors -->
-<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Front)">Door (Driver Side Front)</a></li>
-<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Rear)">Door (Driver Side Rear)</a></li>
-<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Front)">Door (Passenger Side Front)</a></li>
-<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Rear)">Door (Passenger Side Rear)</a></li>
-
-<!-- 🛞 Fenders -->
-<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Front)">Fender (Driver Side Front)</a></li>
-<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Front)">Fender (Passenger Side Front)</a></li>
-<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Rear)">Fender (Driver Side Rear)</a></li>
-<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Rear)">Fender (Passenger Side Rear)</a></li>
-
-<!-- 🚗 Bumpers -->
-<li><a class="dropdown-item" href="#" data-value="Front Bumper">Front Bumper</a></li>
-<li><a class="dropdown-item" href="#" data-value="Rear Bumper">Rear Bumper</a></li>
-
-<!-- 🔧 Bonnet & Hood -->
-<li><a class="dropdown-item" href="#" data-value="Bonnet">Bonnet</a></li>
-
-<!-- 🚘 Roof & Boot -->
-<li><a class="dropdown-item" href="#" data-value="Roof">Roof</a></li>
-<li><a class="dropdown-item" href="#" data-value="Trunk">Trunk</a></li>
-
-<!-- 🔲 Quarter Panels -->
-<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Driver Side)">Quarter Panel (Driver Side)</a></li>
-<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Passenger Side)">Quarter Panel (Passenger Side)</a></li>
-
-<!-- 🔲 Side Mirrors -->
-<li><a class="dropdown-item" href="#" data-value="Mirror (Driver Side)">Mirror (Driver Side)</a></li>
-<li><a class="dropdown-item" href="#" data-value="Mirror (Passenger Side)">Mirror (Passenger Side)</a></li>
-
-<!-- 🔲 Other -->
-<li><a class="dropdown-item" href="#" data-value="Headlights">Headlights</a></li>
-<li><a class="dropdown-item" href="#" data-value="Taillights">Taillights</a></li>
-
-          <li><a class="dropdown-item other-option" href="#" data-value="Other">Other</a></li>
-        </ul>
-      </div>
-    </div>
-
   </div>
-  <div class="selected-tags mt-3"></div>
-</div>
-
-</div>
 
 
-     <div class="mb-4 checkboxservice">
-        <label class="form-label servicelabel">Warranty</label>
-        <div class="  mt-5  fullcover-box  fullcover-year d-flex">
-          
-
-
-<div class="d-flex justify-content-center">
   
-  <label class="option">
-    <input type="radio" name="warranty" value="5">
-    <span class="custom-radio"></span>
-    5 years
-  </label>
-  <label class="option ms-5">
-    <input type="radio" name="warranty" value="10">
-    <span class="custom-radio"></span>
-    10 years
-  </label>
+<div>
+  <div class="mb-4 checkboxservice">
+  <label class="form-label servicelabel my-md-5 my-3">Coverage area</label>
+  <div class="d-md-flex fullcover-box mt-3 align-items-start">
+
+    <!-- Full Protection -->
+    <div>
+      <label class="option">
+        <input type="radio" name="protection1" value="full " class="protection-radio">
+        <span class="custom-radio"></span>
+        Full Protection
+      </label>
+    </div>
+
+    <!-- Partial Protection + Dropdown -->
+    <div class="ms-md-5">
+      <label class="option">
+        <input type="radio" name="protection1" value="partial " class="protection-radio">
+        <span class="custom-radio"></span>
+        Partial Protection
+      </label>
+
+      <div class="dropdown mt-2 parts-dropdown" style="display:none;">
+        <button class="btn btn-warning dropdown-toggle w-100 d-flex justify-content-between align-items-center selecting"
+                type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+          Select Parts
+        </button>
+        <ul class="dropdown-menu parts-list">
+
+<!-- 🚪 Doors -->
+<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Front)">Door (Driver Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Rear)">Door (Driver Side Rear)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Front)">Door (Passenger Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Rear)">Door (Passenger Side Rear)</a></li>
+
+<!-- 🛞 Fenders -->
+<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Front)">Fender (Driver Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Front)">Fender (Passenger Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Rear)">Fender (Driver Side Rear)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Rear)">Fender (Passenger Side Rear)</a></li>
+
+<!-- 🚗 Bumpers -->
+<li><a class="dropdown-item" href="#" data-value="Front Bumper">Front Bumper</a></li>
+<li><a class="dropdown-item" href="#" data-value="Rear Bumper">Rear Bumper</a></li>
+
+<!-- 🔧 Bonnet & Hood -->
+<li><a class="dropdown-item" href="#" data-value="Bonnet">Bonnet</a></li>
+
+<!-- 🚘 Roof & Boot -->
+<li><a class="dropdown-item" href="#" data-value="Roof">Roof</a></li>
+<li><a class="dropdown-item" href="#" data-value="Trunk">Trunk</a></li>
+
+<!-- 🔲 Quarter Panels -->
+<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Driver Side)">Quarter Panel (Driver Side)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Passenger Side)">Quarter Panel (Passenger Side)</a></li>
+
+<!-- 🔲 Side Mirrors -->
+<li><a class="dropdown-item" href="#" data-value="Mirror (Driver Side)">Mirror (Driver Side)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Mirror (Passenger Side)">Mirror (Passenger Side)</a></li>
+
+<!-- 🔲 Other -->
+<li><a class="dropdown-item" href="#" data-value="Headlights">Headlights</a></li>
+<li><a class="dropdown-item" href="#" data-value="Taillights">Taillights</a></li>
+<li><a class="dropdown-item" href="#" data-value="Glass">Glass</a></li>
+<li><a class="dropdown-item" href="#" data-value="Sunroof">Sunroof</a></li>
+<li><a class="dropdown-item" href="#" data-value="Alloy Wheels">Alloy</a></li>
+
+          <li><a class="dropdown-item other-option" href="#" data-value="Other">Other</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="selected-tags mt-3"></div>
 </div>
 
-
-        </div>
-      </div> 
+</div>
 </div>
 
-</div>
       </div>
 
 
@@ -544,7 +546,7 @@
        
          <div class="row mt-md-3">
      <div class="col-6">
-<input type="text" name="refno"  placeholder="Ref No">
+<input type="text" name="vehicleno"  placeholder="Vehicle No.">
 
 
      </div>
@@ -557,15 +559,8 @@
 
 
      <div class="row my-3">
-           <div class="col-6">
-<input type="text" name="color"  placeholder="Color">
-
-
-           </div>
-   
-
-            <div class="col-6">
-<select id="Brand" name="Brand" class="form-select Brand" required>
+                  <div class="col-6">
+<select id="Brand" name="Brand" class="form-select Brand" >
   <option value="" disabled selected>Brand</option>
   <option value="Audi">Audi</option>
   <option value="BMW">BMW</option>
@@ -597,13 +592,21 @@
 
 
             </div>
+           <div class="col-6">
+<input type="text" name="color"  placeholder="Color">
+
+
+           </div>
+   
+
+
      
     </div>
 
 
     <div class="row">
     <div class="col-6">
-  <select id="Model" class="form-select Model"  required>
+  <select id="Model" class="form-select Model"  name="Model">
                       <option value="" selected>Model</option>
                     </select>
     </div>
@@ -626,7 +629,7 @@
     <div class="file-upload">
         <label class="form-label servicelabel ">Upload picture of vehicle*</label>
     
-   <input type="file" id="fileUpload" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
+   <input type="file" id="fileUpload" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" name="image" />
 
    <small class="mb-3">Upload 1 supported file: PDF, document, or image. Max 1 GB</small>
   <!-- Custom Label -->
@@ -655,7 +658,7 @@
    <label class="form-label servicelabel">Total Amount Paid</label>
  <div class="amount-box">
       <span>₹</span>
-      <input type="number" placeholder="Enter amount">
+      <input type="number" placeholder="Enter amount" name="amount">
     </div>
 
 </div>
@@ -680,12 +683,12 @@
     </div>
     <div class="col-lg-4  warranty-box-right d-lg-block d-none ">
       <div class="p-3 ">
-        <div class="my-5  ">
+        <div class="my-4  ">
         <label class="form-label servicelabel">Car Details</label>
        
          <div class="row mt-3">
      <div class="col-6">
-<input type="text" name="refno"  placeholder="Ref No">
+<input type="text" name="vehicleno"  placeholder="Vehicle No.">
 
 
      </div>
@@ -698,15 +701,8 @@
 
 
      <div class="row my-3">
-           <div class="col-6">
-<input type="text" name="color"  placeholder="Color">
-
-
-           </div>
-   
-
             <div class="col-6">
-<select id="Brand" name="Brand" class="form-select Brand" required>
+<select id="Brand" name="Brand" class="form-select Brand" >
   <option value="" disabled selected>Brand</option>
   <option value="Audi">Audi</option>
   <option value="BMW">BMW</option>
@@ -738,13 +734,18 @@
 
 
             </div>
+                       <div class="col-6">
+<input type="text" name="color"  placeholder="Color">
+
+
+           </div>
      
     </div>
 
 
     <div class="row">
     <div class="col-6">
-  <select id="Model" class="form-select Model"  required>
+  <select id="Model" class="form-select Model"  name="Model" >
                       <option value="" selected>Model</option>
                     </select>
     </div>
@@ -767,7 +768,7 @@
     <div class="file-upload">
         <label class="form-label servicelabel ">Upload picture of vehicle*</label>
     
-   <input type="file" id="fileUpload" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
+   <input type="file" id="fileUpload"  accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" name="image" />
 
    <small class="mb-3">Upload 1 supported file: PDF, document, or image. Max 1 GB</small>
   <!-- Custom Label -->
@@ -796,7 +797,7 @@
    <label class="form-label servicelabel">Total Amount Paid</label>
  <div class="amount-box">
       <span>₹</span>
-      <input type="number" placeholder="Enter amount">
+      <input type="number" placeholder="Enter amount" name="amount">
     </div>
 
 </div>
@@ -1182,7 +1183,7 @@ storeSelect.addEventListener("change", function() {
 
 
 
-<script>
+ <script>
 document.addEventListener("DOMContentLoaded", function () {
   // Listen to tab change
   const serviceTabs = document.querySelectorAll('#serviceTabs button[data-bs-toggle="tab"]');
@@ -1217,7 +1218,81 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+</script> 
+
+<script>
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // ===== Customer Details =====
+  const customer = {
+    name: document.getElementById("fullname").value,
+    phone: document.getElementById("phone").value,
+    email: document.getElementById("email").value,
+    address: document.getElementById("address").value,
+  };
+
+  // ===== Service Details =====
+  const mainService = document.querySelector("input[name='service']:checked")?.id || "";
+
+  let hardnessType = "";
+  if (mainService === "ppf") {
+    hardnessType = document.querySelector("input[name='Ppfservice']:checked")?.id || "";
+  } else if (mainService === "ceramic") {
+    hardnessType = document.querySelector("input[name='ccservice']:checked")?.id || "";
+  } else if (mainService === "graphene") {
+    hardnessType = document.querySelector("input[name='grservice']:checked")?.id || "";
+  }
+
+  const subService = document.querySelector("input[name='Subservice']:checked")?.id || "";
+  const coverage = document.querySelector("input[name='protection1']:checked")?.value || "";
+
+  let selectedParts = [];
+  if (coverage === "partial") {
+    selectedParts = [...document.querySelectorAll(".selected-tags span")].map(tag => tag.innerText);
+  }
+
+  // ===== Car Details =====
+  const car = {
+    vehicleNo: document.querySelector("input[name='vehicleno']").value,
+    year: document.querySelector("input[name='year']").value,
+    brand: document.querySelector("select[name='Brand']").value,
+    color: document.querySelector("input[name='color']")?.value || "",
+    model: document.querySelector("select[name='Model']")?.value || "",
+    image: document.querySelector("input[name='image']")?.value || "",
+    totalAmount: document.querySelector("input[name='amount']")?.value || "",
+  };
+
+  // ===== Final Structured Data =====
+  const formData = {
+    customer,
+    serviceDetails: {
+      serviceName: mainService,
+      hardnessType,
+      seriesOrYear: subService,
+      coverage,
+      selectedParts
+    },
+    car
+  };
+
+  // ===== Send to Google Sheet =====
+  fetch("https://script.google.com/macros/s/AKfycbwcSsnOp-Kb_W43fK5FNmf5tuLqLrn94yIBkdQZHlEOxfp5kfFv2DeFwHC-xmkwjWlNIg/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData)
+  })
+  .then(() => {
+    alert("Data saved to Google Sheet!");
+  })
+  .catch(err => console.error("Error:", err));
+
+});
 </script>
+
+
+
 
   </body>
 
