@@ -278,7 +278,30 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
 .arrdress{
   margin-top: 20px;
 }
-.chosservice-box .butanoption input[type="radio"] {
+
+.butanoption input[type="radio"] {
+  display: none;
+}
+
+.butanoption label {
+  border: 2px solid #FCCD10;
+  padding: 6px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #FFE98F;
+  color: #000;
+  margin: 5px;
+}
+
+.butanoption input[type="radio"]:checked + label {
+  background: #000;
+  color: #fff;
+}
+
+/* .chosservice-box .butanoption input[type="radio"] {
   display: none;
  
 
@@ -298,11 +321,13 @@ background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #F
 
 }
 
-.chosservice-box .butanoption input[type="radio"]:checked + label{
+.chosservice-box .butanoption .nav-item input[type="radio"]:checked + label{
   background: #000;
   color: #fff;
 
-}
+} */
+
+
 /* .butanoption input[type="radio"]:checked + label {
   background: #000;
   color: #fff;
@@ -387,6 +412,10 @@ select:focus {
     .fullcover-year{
         justify-content: space-between;
     }
+.butanoption label {
+  color: #000;
+}
+
 
 /* =====================================================================================right=============================== */
 
@@ -394,18 +423,23 @@ select:focus {
     height: 100vh;
     background-color: #282828;
 }
+  .warranty-box-right  .form-select:focus {
+    border-color: #fff;
+    outline: none;
+    box-shadow: none;
 
+}
 .warranty-box-right .servicelabel{
     color: #fff;
     /* font-size: 1.2rem; */
 }
- .warranty-box-left   select, input[type="text"], input[type="number"] {
+ .warranty-box-left    input {
       width: 100%;
       padding: 10px;
       background: transparent;
       border: none;
       border-bottom: 1px solid #fff;
-      color: #000;
+      color: #000 !important;
 
     }
 
@@ -414,6 +448,7 @@ select:focus {
       padding: 10px;
       background: transparent;
       border: none;
+      outline: none;
       border-bottom: 1px solid #fff;
       color: #fff;
 
