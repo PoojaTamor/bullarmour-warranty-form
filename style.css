@@ -765,4 +765,10 @@ width: 10px;
 .chosservice-box {
     padding-block: 4px;
 }
+
+.dateand-servicelocation #OtherStore {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
     }
