@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+    <title>Warranty Form</title>
+<style>
+  .swal2-cancel{
+  background-color: #c44a4a !important;
+          padding: 10px 40px !important;
+}
+.swal2-popup .swal2-confirm {
+    padding: 10px 40px !important;
+    background-color: #709448 !important;
+}
+
+
+</style>
+  </head>
+  <body>
+
+  <div class="welcome-card  ">
+    <!-- Header -->
+    <div class="welcome-header">
+      <div>
+        <h2>Welcome to </h2>
+      <img src="./logo.svg" alt="logo"  >
+      </div>
+    </div>
+<div class="container-fulid px-4 wellcome-body">
+  <div class="row gx-5  text-center">
+          <p class="mb-2">Please select your</p>
+      <h1>WARRANTY TYPE</h1>
+      <div class="col-12 bullaramer-form-col">
+       <div class="btn-group">
+    <a href="./OEM-FORM.html" class="btn-option" id="oemLink" >Original Equipment <br> Manufacturer (OEM) PPF Warranty</a>
+    <a href="./Warranty_form.html" class="btn-option">After Market PPF Warranty</a>
+  </div>
+    </div>
+  </div>
+</div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  document.getElementById("oemLink").addEventListener("click", function(e) {
+  e.preventDefault(); // default link action rokna
+
+  Swal.fire({
+    // title: "Proceed with OEM Warranty?",
+    html: "Kindly confirm if you wish to proceed with the warranty details under OEM, as these products are exclusively designed for Original Equipment Manufacturers (OEMs) and are not authorized for direct sale in the general market.",
+    showCancelButton: true,
+    confirmButtonText: "Yes",
+    cancelButtonText: "No",
+    confirmButtonColor: "#5a965f",
+    cancelButtonColor: "#d33"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.href = "./OEM-FORM.html"; // redirect to OEM form
+    }
+  });
+});
+</script>
+  </body>
+</html>
+

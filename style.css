@@ -1,0 +1,954 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+    .welcome-header {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      height: 250px;
+    }
+    .welcome-header h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+.wellcome-body p{
+font-weight: 500;
+color: #282828;
+font-size: 1.3rem;
+
+}
+
+.bullaramer-form-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wellcome-body{
+    padding-top: 70px;
+    background-color: #F2F2F7;
+}
+
+.wellcome-body h1{
+font-weight: 800;
+font-size: 3rem;
+letter-spacing: -0.06em;
+text-transform: uppercase;
+color: #3C3C3C;
+padding-bottom: 50px;
+}
+    .welcome-header img{
+width: 400px;
+    }
+
+
+
+.welcome-card {
+background: #F2F2F7;
+height: 100vh;
+    }
+.btn-check:focus+.btn-outline-secondary, .btn-outline-secondary:focus {
+    box-shadow: none !important;
+}
+    .btn-outline-secondary:hover{
+              background-color: #ffc107 !important; 
+                    border-color: #ffc107 !important;
+                    color: #444444 !important;
+    }
+
+        .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+            width: 40%;
+
+    }
+
+    .btn-option {
+      height:70px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+align-items: center;
+      font-weight: 600;
+font-size: 1rem;
+border: 1px solid #A6A6A6;
+text-decoration: none;
+color: #717171;
+text-align: left;
+transition: all 0.5s;
+    }
+
+    .btn-option:hover,
+    .btn-option:focus {
+      background: #FFD700; /* yellow */
+      color: #000;
+      border-color: #FFD700;
+    }
+    .headingtext{
+      position: relative;
+    }
+/* ========================================================================================warrant============================ */
+    .warranty-outbox{
+        /* height: 100vh; */
+        /* background-color: #000; */
+    }
+.warranty-box-left{
+    height: 100vh;
+  overflow-y: scroll; 
+   background-color: #F2F2F7;
+    /* padding: 50px; */
+        /* overflow-x: hidden; */
+        /* border: 1px solid #000; */
+}
+.warranty-box-left::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color:none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.nav-link {
+    padding: 0rem ;
+    color:#0E0E0E;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color:transparent !important;
+    isolation: isolate;
+       color:#0E0E0E;
+}
+
+.warranty-box-left h1{
+font-weight: 600;
+color: #0E0E0E;
+line-height: 1;
+font-size: 4rem;
+font-family: 'Clash Display', sans-serif;
+font-style: normal;
+font-weight: 600;
+padding-top: 50px;
+padding-right: 50px;
+}
+
+.warranty-box-left p{
+font-weight: 400;
+color: #8E8E8E;
+padding-right: 50px;
+font-size: 1.3rem;
+}
+
+    .corner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 250px;
+      background: #000;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+    }
+ .corner img{
+padding-left: 40px;
+padding-top: 50px;
+ }
+
+ .warranty-box-left .accordion-body{
+    padding-inline: 50px;
+        background-color: #F2F2F7;
+ }
+
+  .warranty-box-left .accordion-button{
+     padding-left: 50px;
+         background-color: #F2F2F7;
+  }
+ .underline-input {
+  border: none;
+  border-bottom: 2px solid #333 !important;
+  border-radius: 0;
+  outline: none;
+  padding-left: 5px;
+  box-shadow: none;
+  /* margin-top: 50px; */
+  font-size: 1.3rem;
+}
+
+ .warranty-box-left .accordion-button::after {
+display: none;
+}
+  .warranty-box-left .accordion-button:not(.collapsed) .svgmhj {
+
+    transform: rotate(-180deg);
+}
+
+  .warranty-box-left .accordion-button:not(.collapsed) {
+    color: #212529;
+    box-shadow: none;
+}
+
+
+
+.servicebtn:not(.collapsed) {
+background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #FFE98F 100%) ;
+}
+  .warranty-box-left .accordion-button:focus {
+    border-color:none;
+    outline: 0;
+    box-shadow: none;
+}
+.underline-input:focus {
+  border-bottom: 2px solid #000;
+  outline: none;
+  box-shadow: none;
+}
+.underline-input::placeholder{
+padding: 0px;
+font-weight: 400;
+font-size: 1.2rem;
+color: #0E0E0E;
+}
+
+/* =====================service===== */
+.service{
+background: linear-gradient(90deg, #FCCD10 0%, #FDDB4E 3.85%, #FEDC53 93.75%, #FFE98F 100%) ;
+
+    
+}
+/* .warrantymain {
+    overflow:scroll;
+    height: 220px;
+
+} */
+.accordion-item,
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-collapse {
+  border: none !important;
+  box-shadow: none !important; /* agar shadow aa rahi ho to */
+}
+
+
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.underline-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  width: 100%;
+  padding: 6px 10px;
+  outline: none;
+}
+
+.butanoption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-top: 0px;
+
+}
+
+.arrdress{
+  margin-top: 20px;
+}
+
+.butanoption input[type="radio"] {
+  display: none;
+}
+
+.butanoption label {
+  border: 2px solid #FCCD10;
+  padding: 6px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #FFE98F;
+  color: #000;
+  margin: 5px;
+}
+
+.butanoption input[type="radio"]:checked + label {
+  background: #000;
+  color: #fff;
+}
+
+/* .chosservice-box .butanoption input[type="radio"] {
+  display: none;
+ 
+
+
+}
+
+.butanoption label {
+  border: 2px solid #FCCD10;
+  padding: 6px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #FFE98F;
+
+
+}
+
+.chosservice-box .butanoption .nav-item input[type="radio"]:checked + label{
+  background: #000;
+  color: #fff;
+
+} */
+
+
+/* .butanoption input[type="radio"]:checked + label {
+  background: #000;
+  color: #fff;
+} */
+
+.servicelabel{
+line-height: 1;
+font-weight: 500;
+font-size: 1.5rem;
+color: #0E0E0E;
+}
+
+.chosservice-box{
+    padding-block: 30px;
+}
+
+.checkboxservice{
+
+}
+
+  .checkboxservice input[type="radio"] {
+      display: none;
+    }
+    /* Custom checkbox style */
+ .checkboxservice  .custom-radio {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+.checkboxservice   input[type="radio"]:checked + .custom-radio::after {
+    content: "✓";
+    position: absolute;
+    top: -2px;
+    left: 8px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+}
+ .checkboxservice   .dropdown {
+      display: none;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+   .fullcover-box   .option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-size: 1.3rem;
+      font-weight: 500;
+
+
+    }
+    .fullcover-box  select {
+    background-color: transparent;
+    width: 300px;
+    margin-left: 50px;
+    word-wrap: normal;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 0px 10px 10px 5px;
+    font-size: 1.2rem;
+    color: #444444;
+    font-weight: 500;
+        appearance: none;          
+      -webkit-appearance: none;      
+      -moz-appearance: none;
+     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11' fill='none'><path d='M5.82116 10.7114L0.439263 0.718333L11.2031 0.718332L5.82116 10.7114Z' fill='%230E0E0E'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px 11px;
+}
+select:focus {
+      outline: none;
+      border-color: #000;
+    }
+
+    .fullcover-year{
+        justify-content: space-between;
+    }
+.butanoption label {
+  color: #000;
+}
+
+
+/* =====================================================================================right=============================== */
+
+.warranty-box-right{
+    height: 100vh;
+    background-color: #282828;
+}
+  .warranty-box-right  .form-select:focus {
+    border-color: #fff;
+    outline: none;
+    box-shadow: none;
+
+}
+.warranty-box-right .servicelabel{
+    color: #fff;
+    font-size: 1.2rem;
+}
+ .warranty-box-left    input {
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      color: #000 !important;
+
+    }
+
+ .warranty-box-right   select, input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+
+    }
+
+ .warranty-box-right   select option {
+      color: #000;
+    }
+
+    /* File upload */
+
+
+ .warranty-box-right   .file-upload input[type="file"] {
+      background: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+ .warranty-box-right   .file-upload small {
+      display: block;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #E4E4E4;
+    }
+
+    /* Amount input */
+  .warranty-box-right  .amount-box {
+      display: flex;
+      align-items: center;
+      background: #eee;
+      border-radius: 6px;
+      padding: 5px 10px;
+      margin-bottom: 15px;
+    }
+
+
+ .warranty-box-right   .amount-box span {
+      margin-right: 5px;
+      color: #000;
+    }
+
+  .warranty-box-right  .amount-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 14px;
+      flex: 1;
+      color: #000;
+    }
+
+    /* Checkbox */
+ .warranty-box-right   .checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .agree{
+      color: #fff;  
+      font-size: 0.8rem;
+    }
+ .warranty-box-right   .checkbox input {
+      margin-right: 8px;
+    }
+
+    /* Submit button */
+ .warranty-box-right   .submit-btn {
+      background: #FFD400;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+   .warranty-box-right .submit-btn:hover {
+      background: #e6bd00;
+    }
+
+      /* Hide default input */
+    input[type="file"] {
+      display: none;
+    }
+
+    /* Custom button */
+    .file-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #e6e6e6;
+      color: #000;
+      padding: 8px 15px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      transition: background 0.2s;
+    }
+
+    .file-label:hover {
+      background: #d9d9d9;
+    }
+
+    /* Small upload arrow icon */
+    .file-label svg {
+      width: 16px;
+      height: 16px;
+    }
+
+        #selectedTags{
+
+        }
+    .selected-tags .tag{
+      display:inline-block;
+  border: 2px solid #FCCD10;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 5px 1px;
+  background-color: #FFE98F;
+
+    }
+    .selecting{
+      background-color: transparent !important;
+      border: none;
+border-bottom: 2px solid #000;
+border-radius: 0;
+width: 200px !important;
+font-size: 1.2rem;
+color: #444444;
+    }
+     
+      .selecting:hover{
+border-bottom: 2px solid #000;
+
+      }
+      .btn-check:focus+.btn-warning, .btn-warning:focus {
+    color: #000;
+    background-color: #ffca2c;
+    border-color: #000;
+    box-shadow: none !important;
+}
+
+.dateand-servicelocation .form-select{
+background-color: transparent;
+border: none;
+border-bottom: 2px solid #000;
+       appearance: none;          
+      -webkit-appearance: none;      
+      -moz-appearance: none;
+     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11' fill='none'><path d='M5.82116 10.7114L0.439263 0.718333L11.2031 0.718332L5.82116 10.7114Z' fill='%230E0E0E'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px 11px;
+      font-size: 1.2rem
+
+}
+.form-select{
+  border-radius: 0px;
+}
+.form-select:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+.dateand-servicelocation .dateinput{
+    padding: 6px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0px;
+    color: #000;
+      font-size: 1.2rem
+
+    
+}
+
+ .warranty-box-left .form-control:focus {
+    background-color:transparent;
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+ .warranty-box-right .form-control:focus{
+   background-color:transparent;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+   outline: none;
+ }
+ .dateand-servicelocation #OtherStore{
+  color: #000;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #000;
+ }
+   .warranty-box-right input[type="text"]::placeholder{
+color: #fff;
+   }
+
+  
+  .caredetailsbtn:not(.collapsed) {
+  background-color:#282828 ;
+
+color: #fff !important;
+}
+ .caredetailsbtn:not(.collapsed)  svg path{
+  fill: #fff !important;
+ }
+
+ .caredetails .accordion-body{
+  background-color: #282828;
+ }
+
+
+.svg1{
+  margin-left: 20px;
+}
+
+.svg2{
+  margin-left: 30px;
+}
+
+.svg3{
+  margin-left:75px;
+}
+
+.fileNameDisplay{
+  color:#E4E4E4;
+  font-size: 0.7rem;
+  margin-top: 4px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  
+
+}
+.dropdown-menu{
+   overflow-y: scroll;
+    padding: 10px 10px;
+    margin: 0;
+    font-size: 0.9rem;
+    height: 200px;
+}
+
+.swal2-popup .swal2-confirm{
+ color: #fff !important;
+  background-color: #c44a4a !important; 
+  padding: 10px 40px !important;
+}
+.swal2-icon-success .swal2-confirm{
+  background-color: #709448 !important;
+}
+   @media (max-width: 977px) {
+    .warranty-box-right {
+    height: unset;
+    background-color: #282828;
+}
+.btn-group {
+    gap: 12px;
+    width: 70%;
+}
+.wellcome-body {
+    padding-top: 150px;
+}
+.cardetalibody input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+}
+.warranty-box-right   .checkbox input {
+    margin-right: 0px;
+    width: 30px;
+}
+ .warranty-box-left    input {
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      color: #000 !important;
+
+    }
+   }
+
+
+     @media (max-width: 500px) {
+      .corner img {
+    width: 50px;
+    padding-left: 22px;
+    padding-top: 34px;
+}
+.corner {
+    width: 150px;
+    height: 150px;
+
+}
+.warranty-box-left h1 {
+    font-size: 2rem;
+    padding-top: 41px;
+    padding-right: 13px;
+}
+.warranty-box-left p {
+    font-weight: 400;
+    color: #8E8E8E;
+     padding-right: 13px;
+    font-size: 0.7rem;
+    line-height: 1;
+}
+.warranty-box-left .accordion-button {
+    padding-left: 30px;
+}
+.warranty-box-left .accordion-body {
+    padding-inline: 30px;
+}
+.warranty-box-left .accordion-button  h3{
+font-size: 1.2rem;
+}
+.butanoption {
+    gap: 2px;
+}
+.butanoption label {
+    padding: 3px 15px;
+    font-size: 0.8rem;
+}
+.servicelabel {
+    font-size: 1rem;
+}
+.checkboxservice  .custom-radio {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.fullcover-box   .option {
+    font-size: 0.9rem;
+}
+.checkboxservice   input[type="radio"]:checked + .custom-radio::after {
+    top: -2px;
+    left: 5px;
+    font-size: 16px;
+}
+.selecting {
+    width: 140px !important;
+    font-size: 0.9rem;
+}
+.selected-tags .tag {
+    padding: 3px 10px;
+    font-size: 0.7rem;
+    margin: 5px 1px;
+}
+.warranty-box-right   .file-upload small {
+    margin-top: 8px;
+    font-size: 8px;
+}
+.agree {
+    color: #fff;
+    font-size: 0.6rem;
+}
+.warranty-box-right   .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+     }
+     .warranty-box-right input[type="number"] {
+    padding: 4px;
+    font-size: 14px;
+}
+.underline-input{
+  font-size: 0.9rem;
+}
+.underline-input::placeholder{
+padding: 0px;
+font-weight: 400;
+font-size: 0.9rem;
+color: #0E0E0E;
+}
+
+.svg1 , .svg2 ,.svg3 {
+width: 10px;
+     }
+     .svg3{
+      margin-left: 65px;
+     }
+     .dateand-servicelocation .form-select {
+    font-size: 0.9rem;
+        background-position: right 0px center;
+    background-size: 9px 10px;
+}
+.dateand-servicelocation .dateinput {
+    font-size: 0.9rem;
+
+}
+.swal2-popup .swal2-confirm {
+    padding: 6px 40px !important;
+}
+.swal2-backdrop-show h2{
+  font-size: 1.3rem;
+}
+
+.swal2-backdrop-show .swal2-html-container{
+font-size: 0.9rem;
+}
+.swal2-icon-success .swal2-confirm{
+  background-color: #709448 !important;
+}
+.chosservice-box {
+    padding-block: 4px;
+}
+
+.dateand-servicelocation #OtherStore {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+.welcome-header img {
+    width: 250px;
+}
+.welcome-header h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.wellcome-body {
+    padding-top: 50px;
+}
+.wellcome-body h1 {
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+.wellcome-body p {
+    font-size: 1.1rem;
+}
+.welcome-header {
+    height: 200px;
+}
+.btn-option {
+    height: 70px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+.btn-group {
+    width: 100%;
+}
+.btn-option {
+    height: 60px;
+}
+    .fullcover-year{
+        justify-content: unset;
+    }
+    .dropdown-menu {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(47, 47, 45);
+}
+
+.cardetalibody input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+}
+.caredetailsbtn{
+  padding-bottom: 30px;
+}
+ .caredetailsbtn:not(.collapsed) {
+padding-bottom: 0px;
+}
+.cardetalibody{
+  padding-bottom: 30px;
+}
+ .warranty-box-left    input {
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      color: #000 !important;
+
+    }
+    #serviceDate{
+      padding: 6px;
+    }
+    }

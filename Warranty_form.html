@@ -1,0 +1,1605 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <title> Warranty Form </title>
+  </head>
+  <body>
+
+<div class="container-fluid warranty-outbox p-0">
+    <form action="">
+  <div class="row gx-0">
+    <div class="col-lg-8 warranty-box-left  ">
+    <div class="row">
+    <div class="col">
+      <div class="p-3 text-end  headingtext">
+        <div class="corner"><a href="./index.html"><img src="./b_logo.svg" alt=""></a> </div>
+        <h1>WARRANTY  <br>CARD</h1>
+        <p>Fill your details to apply for the warranty</p>
+      </div>
+
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+     <h3>Personal Details</h3> <svg width="16"  height="14" viewBox="0 0 16 14"  class="svg1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.9692 0.664216V5.56022L8.2512 13.3802L0.533203 5.56022L0.533203 0.664215L8.2512 8.51822L15.9692 0.664216Z" fill="#282828"/>
+</svg>
+
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <div class="row mb-3 gy-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control underline-input" name="name" id="fullname" placeholder="Full Name" >
+      </div>
+      <div class="col-md-6">
+        <input type="number" class="form-control underline-input" name="phone_number" id="phone" placeholder="Phone no" >
+      </div>
+    </div>
+
+    <div class="my-md-4 ">
+      <input type="email" class="form-control underline-input"   name="email" id="email" placeholder="Email" >
+    </div>
+
+    <div class="mb-md-3 arrdress">
+      <input type="text" class="form-control underline-input" id="address" name="address" placeholder="Address">
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item service">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed servicebtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h3>Service Details</h3> <svg width="16"  height="14"  viewBox="0 0 16 14" fill="none" class=" svg2" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.9692 0.664216V5.56022L8.2512 13.3802L0.533203 5.56022L0.533203 0.664215L8.2512 8.51822L15.9692 0.664216Z" fill="#282828"/>
+</svg>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body service">
+  <div class="warrantymain">
+  
+      <!-- Date of Service -->
+
+
+      <div class="d-flex  dateand-servicelocation">
+              <div class="">
+                 <label class="form-label servicelabel">service Outlate</label>
+     <select id="Store" class="form-select" >
+  <option value="" disabled selected>Select Store</option>
+</select>
+
+<div id="otherStoreContainer" style="display:none; margin-top:10px;">
+  <input type="text" id="OtherStore" class="form-control" placeholder="Enter your store" />
+</div>
+      </div>
+      <div class="mb-4 ms-md-5 ms-2">
+        <label class="form-label servicelabel" >Date of service</label>
+       <input type="text" id="serviceDate" class="form-control custom-input dateinput" placeholder="Select Date" name="dateInput" autocomplete="off">
+      </div>
+
+      </div>
+
+
+<!-- -------------bar=--------- -->
+
+
+
+<!-- -------------bar=--------- -->
+
+      <!-- Choose Service -->
+      <div class="chosservice-box">
+        <label class="form-label servicelabel">Choose the service</label>
+        <div class="options mt-4 ">
+    <!-- Main Tabs -->
+    <ul class="nav nav-tabs border-0 mb-3 butanoption " id="serviceTabs" role="tablist">
+
+      <!-- -------------------ppf------------- -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="ppf-tab" data-bs-toggle="tab" data-bs-target="#ppf-pane" type="button" role="tab">
+         <input type="radio" id="ppf" name="service"  value="PPF">
+          <label for="ppf">PPF</label>
+        </button>
+      </li>
+
+
+      <!-- -------------------Ceramic------------- -->
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="ceramic-tab" data-bs-toggle="tab" data-bs-target="#ceramic-pane" type="button" role="tab">   <input type="radio" id="ceramic" name="service" value="Ceramic">
+          <label for="ceramic">Ceramic</label></button>
+      </li>
+
+
+      <!-- -------------------Graphene------------- -->
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="graphene-tab" data-bs-toggle="tab" data-bs-target="#graphene-pane" type="button" role="tab">  
+           <input type="radio" id="graphene" name="service" value="Graphene">
+          <label for="graphene">Graphene</label>
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+      <div class="tab-content ">
+        <!-- PPF Options -->
+        <label class="form-label servicelabel my-3">Hardness type</label>
+
+        <div class="tab-pane fade show active " id="ppf-pane" role="tabpanel">
+          <!-- Sub Tabs for PPF -->
+      <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ppfSubTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="gloss-tab" data-bs-toggle="tab" data-bs-target="#gloss-pane" type="button" role="tab">
+      <input type="radio" id="Gloss" name="Ppfservice" value="Gloss">
+      <label for="Gloss">Gloss</label>
+    </button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="matte-tab" data-bs-toggle="tab" data-bs-target="#matte-pane" type="button" role="tab">
+      <input type="radio" id="Matte" name="Ppfservice" value="Matte">
+      <label for="Matte">Matte</label>
+    </button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="colored-tab" data-bs-toggle="tab" data-bs-target="#colored-pane" type="button" role="tab">
+      <input type="radio" id="Colored" name="Ppfservice" value="Colored">
+      <label for="Colored">Colored</label>
+    </button>
+  </li>
+
+</ul>
+
+
+          <!-- Sub Tab Content -->
+            <label class="form-label servicelabel my-4">Select the series / years</label>
+          <div class="tab-content  butanoption">
+            <!-- Gloss Options -->
+            
+
+            <div class="tab-pane fade show active" id="gloss-pane" role="tabpanel">
+              <ul class="nav nav-tabs border-0 mb-3 butanoption" id="glossOptions" role="tablist">
+                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="3 year warranty"><input type="radio" id="Pro" name="Subservice" value="Pro">
+          <label for="Pro">Pro</label></li>
+                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="5 year warranty"><input type="radio" id="PrimePlus" name="Subservice" value="Prime Plus">
+          <label for="PrimePlus">Prime Plus </label></li>
+                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty"> <input type="radio" id="Performance" name="Subservice" value="Performance">
+          <label for="Performance">Performance </label></li>
+          <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty (IH)"><input type="radio" id="PerformancePlus" name="Subservice" value="Performance Plus">
+          <label for="PerformancePlus" >Performance Plus  </label></li>
+              </ul>
+
+
+
+            </div>
+
+          <!-- Matte Options -->
+<div class="tab-pane fade" id="matte-pane" role="tabpanel">
+  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="matteOptions" role="tablist">
+    <li class="nav-item"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="5 year warranty">
+    
+        <input type="radio" id="MattePrimePlus" name="Subservice" value="Prime Plus">
+        <label for="MattePrimePlus">Prime Plus</label>
+  
+    </li>
+    <li class="nav-item"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty">
+    
+        <input type="radio" id="MattePerformance" name="Subservice" value="Performance">
+        <label for="MattePerformance">Performance</label>
+  
+    </li>
+  </ul>
+</div>
+
+<!-- Colored Options -->
+<div class="tab-pane fade" id="colored-pane" role="tabpanel">
+  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="coloredOptions" role="tablist">
+    <li class="nav-item"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="5 year warranty">
+   
+        <input type="radio" id="Colored9PrimePlus" name="Subservice" value="Prime Plus">
+        <label for="Colored9PrimePlus">Prime Plus</label>
+
+    </li>
+    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="8 year warranty">
+  
+        <input type="radio" id="ColoredPerformance" name="Subservice" value="Performance">
+        <label for="ColoredPerformance">Performance</label>
+
+    </li>
+  </ul>
+</div>
+
+          </div>
+
+
+<div>
+  <div class="mb-4 checkboxservice">
+  <label class="form-label servicelabel my-md-5 my-3">Coverage area</label>
+  <div class="d-md-flex fullcover-box mt-3 align-items-start">
+
+    <!-- Full Protection -->
+    <div>
+      <label class="option">
+        <input type="radio" name="protection1" value="full" class="protection-radio">
+        <span class="custom-radio"></span>
+        Full Protection
+      </label>
+    </div>
+
+    <!-- Partial Protection + Dropdown -->
+    <div class="ms-md-5">
+      <label class="option">
+        <input type="radio" name="protection1" value="partial" class="protection-radio">
+        <span class="custom-radio"></span>
+        Partial Protection
+      </label>
+
+      <div class="dropdown mt-2 parts-dropdown" style="display:none;">
+        <button class="btn btn-warning dropdown-toggle w-100 d-flex justify-content-between align-items-center selecting"
+                type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+          Select Parts
+        </button>
+        <ul class="dropdown-menu parts-list">
+
+<!-- 🚪 Doors -->
+<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Front)">Door (Driver Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Rear)">Door (Driver Side Rear)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Front)">Door (Passenger Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Rear)">Door (Passenger Side Rear)</a></li>
+
+<!-- 🛞 Fenders -->
+<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Front)">Fender (Driver Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Front)">Fender (Passenger Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Rear)">Fender (Driver Side Rear)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Rear)">Fender (Passenger Side Rear)</a></li>
+
+<!-- 🚗 Bumpers -->
+<li><a class="dropdown-item" href="#" data-value="Front Bumper">Front Bumper</a></li>
+<li><a class="dropdown-item" href="#" data-value="Rear Bumper">Rear Bumper</a></li>
+
+<!-- 🔧 Bonnet & Hood -->
+<li><a class="dropdown-item" href="#" data-value="Bonnet">Bonnet</a></li>
+
+<!-- 🚘 Roof & Boot -->
+<li><a class="dropdown-item" href="#" data-value="Roof">Roof</a></li>
+<li><a class="dropdown-item" href="#" data-value="Trunk">Trunk</a></li>
+
+<!-- 🔲 Quarter Panels -->
+<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Driver Side)">Quarter Panel (Driver Side)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Passenger Side)">Quarter Panel (Passenger Side)</a></li>
+
+<!-- 🔲 Side Mirrors -->
+<li><a class="dropdown-item" href="#" data-value="Mirror (Driver Side)">Mirror (Driver Side)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Mirror (Passenger Side)">Mirror (Passenger Side)</a></li>
+
+<!-- 🔲 Other -->
+<li><a class="dropdown-item" href="#" data-value="Headlights">Headlights</a></li>
+<li><a class="dropdown-item" href="#" data-value="Taillights">Taillights</a></li>
+
+          <li><a class="dropdown-item other-option" href="#" data-value="Other">Other</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="selected-tags mt-3"></div>
+</div>
+
+</div>
+        </div>
+
+
+<!-- ================= CERAMIC ================= -->
+<div class="tab-pane fade" id="ceramic-pane" role="tabpanel">
+
+  <!-- Ceramic Main Sub Tabs -->
+  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ceramicSubTabs" role="tablist">
+    <li class="nav-item">
+      <button class="nav-link active" id="ceramic10h-tab" data-bs-toggle="tab" data-bs-target="#ceramic10h-pane" type="button" role="tab">
+        <input type="radio" id="10H" name="ccservice" value="10H">
+        <label for="10H">10H</label>
+      </button>
+    </li>
+  </ul>
+
+  <!-- Ceramic Sub Tab Content -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="ceramic10h-pane" role="tabpanel">
+      <label class="form-label servicelabel my-3">Select Warranty</label>
+      <ul class="nav nav-tabs border-0 mb-3 butanoption" id="ceramicWarranty" role="tablist">
+        <li class="nav-item"><input type="radio" id="Ceramic1yr" name="Subservice" value="1Year"><label for="Ceramic1yr">1 Year</label></li>
+        <li class="nav-item"><input type="radio" id="Ceramic3yr" name="Subservice" value="3Years"><label for="Ceramic3yr">3 Years</label></li>
+        <li class="nav-item"><input type="radio" id="Ceramic5yr" name="Subservice" value="5Years"><label for="Ceramic5yr">5 Years</label></li>
+        <li class="nav-item"><input type="radio" id="Ceramic7yr" name="Subservice" value="7Years"><label for="Ceramic7yr">7 Years</label></li>
+      </ul>
+    </div>
+  </div>
+
+<div>
+  <div class="mb-4 checkboxservice">
+  <label class="form-label servicelabel my-md-5 my-3">Coverage area</label>
+  <div class="d-md-flex fullcover-box mt-3 align-items-start">
+
+    <!-- Full Protection -->
+    <div>
+      <label class="option">
+        <input type="radio" name="protection1" value="full " class="protection-radio">
+        <span class="custom-radio"></span>
+        Full Protection
+      </label>
+    </div>
+
+    <!-- Partial Protection + Dropdown -->
+    <div class="ms-md-5">
+      <label class="option">
+        <input type="radio" name="protection1" value="partial" class="protection-radio">
+        <span class="custom-radio"></span>
+        Partial Protection
+      </label>
+
+      <div class="dropdown mt-2 parts-dropdown" style="display:none;">
+        <button class="btn btn-warning dropdown-toggle w-100 d-flex justify-content-between align-items-center selecting"
+                type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+          Select Parts
+        </button>
+        <ul class="dropdown-menu parts-list">
+
+<!-- 🚪 Doors -->
+<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Front)">Door (Driver Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Rear)">Door (Driver Side Rear)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Front)">Door (Passenger Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Rear)">Door (Passenger Side Rear)</a></li>
+
+<!-- 🛞 Fenders -->
+<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Front)">Fender (Driver Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Front)">Fender (Passenger Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Rear)">Fender (Driver Side Rear)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Rear)">Fender (Passenger Side Rear)</a></li>
+
+<!-- 🚗 Bumpers -->
+<li><a class="dropdown-item" href="#" data-value="Front Bumper">Front Bumper</a></li>
+<li><a class="dropdown-item" href="#" data-value="Rear Bumper">Rear Bumper</a></li>
+
+<!-- 🔧 Bonnet & Hood -->
+<li><a class="dropdown-item" href="#" data-value="Bonnet">Bonnet</a></li>
+
+<!-- 🚘 Roof & Boot -->
+<li><a class="dropdown-item" href="#" data-value="Roof">Roof</a></li>
+<li><a class="dropdown-item" href="#" data-value="Trunk">Trunk</a></li>
+
+<!-- 🔲 Quarter Panels -->
+<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Driver Side)">Quarter Panel (Driver Side)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Passenger Side)">Quarter Panel (Passenger Side)</a></li>
+
+<!-- 🔲 Side Mirrors -->
+<li><a class="dropdown-item" href="#" data-value="Mirror (Driver Side)">Mirror (Driver Side)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Mirror (Passenger Side)">Mirror (Passenger Side)</a></li>
+
+<!-- 🔲 Other -->
+<li><a class="dropdown-item" href="#" data-value="Headlights">Headlights</a></li>
+<li><a class="dropdown-item" href="#" data-value="Taillights">Taillights</a></li>
+<li><a class="dropdown-item" href="#" data-value="Glass">Glass</a></li>
+<li><a class="dropdown-item" href="#" data-value="Sunroof">Sunroof</a></li>
+<li><a class="dropdown-item" href="#" data-value="Alloy Wheels">Alloy</a></li>
+
+          <li><a class="dropdown-item other-option" href="#" data-value="Other">Other</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="selected-tags mt-3"></div>
+</div>
+
+</div>
+
+
+
+</div>
+
+<!-- ================= GRAPHENE ================= -->
+<div class="tab-pane fade" id="graphene-pane" role="tabpanel">
+
+  <!-- Graphene Main Sub Tabs -->
+  <ul class="nav nav-tabs border-0 mb-3 butanoption" id="grapheneSubTabs" role="tablist">
+    <li class="nav-item">
+      <button class="nav-link active" id="graphene10h-tab" data-bs-toggle="tab" data-bs-target="#graphene10h-pane" type="button" role="tab">
+        <input type="radio" id="Graphene10H" name="grservice" value="10H">
+        <label for="Graphene10H">10H</label>
+      </button>
+    </li>
+  </ul>
+
+  <!-- Graphene Sub Tab Content -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="graphene10h-pane" role="tabpanel">
+      <label class="form-label servicelabel my-3">Select Warranty</label>
+      <ul class="nav nav-tabs border-0 mb-3 butanoption" id="grapheneWarranty" role="tablist">
+        <li class="nav-item"><input type="radio" id="Graphene5yr" name="Subservice" value="5Years"><label for="Graphene5yr">5 Years</label></li>
+        <li class="nav-item"><input type="radio" id="Graphene10yr" name="Subservice" value="10Years"><label for="Graphene10yr">10 Years</label></li>
+      </ul>
+    </div>
+  </div>
+
+
+  
+<div>
+  <div class="mb-4 checkboxservice">
+  <label class="form-label servicelabel my-md-5 my-3">Coverage area</label>
+  <div class="d-md-flex fullcover-box mt-3 align-items-start">
+
+    <!-- Full Protection -->
+    <div>
+      <label class="option">
+        <input type="radio" name="protection1" value="full" class="protection-radio">
+        <span class="custom-radio"></span>
+        Full Protection
+      </label>
+    </div>
+
+    <!-- Partial Protection + Dropdown -->
+    <div class="ms-md-5">
+      <label class="option">
+        <input type="radio" name="protection1" value="partial" class="protection-radio">
+        <span class="custom-radio"></span>
+        Partial Protection
+      </label>
+
+      <div class="dropdown mt-2 parts-dropdown" style="display:none;">
+        <button class="btn btn-warning dropdown-toggle w-100 d-flex justify-content-between align-items-center selecting"
+                type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+          Select Parts
+        </button>
+        <ul class="dropdown-menu parts-list">
+
+<!-- 🚪 Doors -->
+<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Front)">Door (Driver Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Driver Side Rear)">Door (Driver Side Rear)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Front)">Door (Passenger Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Door (Passenger Side Rear)">Door (Passenger Side Rear)</a></li>
+
+<!-- 🛞 Fenders -->
+<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Front)">Fender (Driver Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Front)">Fender (Passenger Side Front)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Driver Side Rear)">Fender (Driver Side Rear)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Fender (Passenger Side Rear)">Fender (Passenger Side Rear)</a></li>
+
+<!-- 🚗 Bumpers -->
+<li><a class="dropdown-item" href="#" data-value="Front Bumper">Front Bumper</a></li>
+<li><a class="dropdown-item" href="#" data-value="Rear Bumper">Rear Bumper</a></li>
+
+<!-- 🔧 Bonnet & Hood -->
+<li><a class="dropdown-item" href="#" data-value="Bonnet">Bonnet</a></li>
+
+<!-- 🚘 Roof & Boot -->
+<li><a class="dropdown-item" href="#" data-value="Roof">Roof</a></li>
+<li><a class="dropdown-item" href="#" data-value="Trunk">Trunk</a></li>
+
+<!-- 🔲 Quarter Panels -->
+<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Driver Side)">Quarter Panel (Driver Side)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Quarter Panel (Passenger Side)">Quarter Panel (Passenger Side)</a></li>
+
+<!-- 🔲 Side Mirrors -->
+<li><a class="dropdown-item" href="#" data-value="Mirror (Driver Side)">Mirror (Driver Side)</a></li>
+<li><a class="dropdown-item" href="#" data-value="Mirror (Passenger Side)">Mirror (Passenger Side)</a></li>
+
+<!-- 🔲 Other -->
+<li><a class="dropdown-item" href="#" data-value="Headlights">Headlights</a></li>
+<li><a class="dropdown-item" href="#" data-value="Taillights">Taillights</a></li>
+<li><a class="dropdown-item" href="#" data-value="Glass">Glass</a></li>
+<li><a class="dropdown-item" href="#" data-value="Sunroof">Sunroof</a></li>
+<li><a class="dropdown-item" href="#" data-value="Alloy Wheels">Alloy</a></li>
+
+          <li><a class="dropdown-item other-option" href="#" data-value="Other">Other</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="selected-tags mt-3"></div>
+</div>
+
+</div>
+</div>
+
+      </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item  caredetails  warranty-box-right d-lg-none d-block">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed caredetailsbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  <h3>Car Details</h3> <svg width="16" height="14" viewBox="0 0 16 14" fill="none"  class=" svg3" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.9692 0.664216V5.56022L8.2512 13.3802L0.533203 5.56022L0.533203 0.664215L8.2512 8.51822L15.9692 0.664216Z" fill="#282828"/>
+</svg>
+
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body cardetalibody">
+      <div class="p-md-3  col-md-10">
+        <div class="my-md-5  ">
+        <!-- <label class="form-label servicelabel">Car Details</label> -->
+       
+         <div class="row mt-md-3">
+     <div class="col-6">
+<input type="text" name="vehicleno"  placeholder="Vehicle No."  id="vehicleno_mobile" class="vnonber">
+
+
+     </div>
+
+     <div class="col-6">
+<input type="text" name="year"  placeholder="Year" id="year_mobile" >
+
+     </div>
+    </div>
+
+
+     <div class="row my-3">
+                  <div class="col-6">
+<select id="Brand_mobile" name="Brand" class="form-select Brand" >
+  <option value="" disabled selected>Brand</option>
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="BYD">BYD</option>
+  <option value="Chevrolet">Chevrolet</option>
+  <option value="Citroen">Citroen</option>
+  <option value="Datsun">Datsun</option>
+  <option value="Ford">Ford</option>
+  <option value="Hyundai">Hyundai</option>
+  <option value="Isuzu">Isuzu</option>
+  <option value="Jaguar">Jaguar</option>
+  <option value="Kia">Kia</option>
+  <option value="Land Rover">Land Rover</option>
+  <option value="Lexus">Lexus</option>
+  <option value="Mahindra">Mahindra</option>
+  <option value="Maruti Suzuki">Maruti Suzuki</option>
+  <option value="MG Motors">MG Motors</option>
+  <option value="Mercedes-Benz">Mercedes-Benz</option>
+  <option value="Mini Cooper">Mini Cooper</option>
+  <option value="Nissan">Nissan</option>
+  <option value="Porsche">Porsche</option>
+  <option value="Renault">Renault</option>
+  <option value="Skoda">Skoda</option>
+  <option value="Tata">Tata</option>
+  <option value="Toyota">Toyota</option>
+  <option value="Volkswagen">Volkswagen</option>
+  <option value="Volvo">Volvo</option>
+</select>
+
+
+            </div>
+           <div class="col-6">
+<input type="text" name="color"  placeholder="Color" id="color_mobile">
+
+
+           </div>
+   
+
+
+     
+    </div>
+
+
+    <div class="row">
+    <div class="col-6">
+  <select id="Model_mobile" class="form-select Model"  name="Model">
+                      <option value="" selected>Model</option>
+                    </select>
+    </div>
+  <div
+                    class="col-6 otherModelContainer"
+                    id="otherModelContainer"
+                    style="display: none">
+                    <input
+                      type="text"
+                      id="OtherModel"
+                       name="OtherModel"
+                    class="OtherModel"
+                      placeholder="other model"/>
+                  </div>
+    </div>
+      </div>
+
+
+<div class="my-4">
+    <div class="file-upload">
+        <label class="form-label servicelabel ">Upload picture of vehicle*</label>
+    
+   <input type="file" id="fileUpload_mobile" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" name="image"  class="fileUpload"/>
+
+   <small class="mb-3">Upload 1 supported file: PDF, document, or image. Max 1 GB</small>
+  <!-- Custom Label -->
+  <label for="fileUpload_mobile" class="file-label">
+<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_40_36)">
+<path d="M19.9832 13.9691C19.7083 13.9691 19.4853 14.1919 19.4853 14.4669V16.3693C19.4853 17.4673 18.592 18.3606 17.4939 18.3606H3.91141C2.81337 18.3606 1.92003 17.4673 1.92003 16.3693V14.4669C1.92003 14.1919 1.69715 13.9691 1.42217 13.9691C1.14719 13.9691 0.924316 14.1919 0.924316 14.4669V16.3693C0.924316 18.0163 2.26433 19.3564 3.91141 19.3564H17.4939C19.141 19.3564 20.481 18.0163 20.481 16.3693V14.4669C20.481 14.1919 20.2581 13.9691 19.9832 13.9691Z" fill="black"/>
+<path d="M4.44463 16.9264H16.9603C17.2353 16.9264 17.4582 16.7035 17.4582 16.4285C17.4582 16.1535 17.2353 15.9307 16.9603 15.9307H4.44463C4.16973 15.9307 3.94678 16.1535 3.94678 16.4285C3.94682 16.7035 4.16969 16.9264 4.44463 16.9264Z" fill="black"/>
+<path d="M6.36667 6.95321L10.2047 3.52452V13.1734C10.2047 13.4484 10.4277 13.6712 10.7026 13.6712C10.9776 13.6712 11.2005 13.4484 11.2005 13.1734V3.52452L15.0385 6.95321C15.1335 7.03804 15.252 7.07979 15.37 7.07979C15.5069 7.07979 15.6431 7.02368 15.7415 6.9136C15.9247 6.70852 15.9069 6.39386 15.7019 6.21063L11.5318 2.48531C11.0591 2.06304 10.3462 2.06297 9.87339 2.48531L5.70331 6.21063C5.49823 6.39378 5.48051 6.70852 5.6637 6.9136C5.84685 7.1186 6.16152 7.13648 6.36667 6.95321Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_40_36">
+<rect width="19.5567" height="19.5567" fill="white" transform="translate(0.924316 0.984131)"/>
+</clipPath>
+</defs>
+</svg>
+
+  <span>  Add File</span>
+  </label>
+  <p class="fileNameDisplay" ></p>
+    </div> 
+    
+</div>
+
+
+
+<div>
+   <label class="form-label servicelabel">Total Amount Paid</label>
+ <div class="amount-box">
+      <span>₹</span>
+      <input type="number" placeholder="Enter amount" name="amount" id="amount_mobile">
+    </div>
+
+</div>
+
+   <div class="checkbox mb-4">
+      <input type="checkbox" id="agree-mobile" class="agree-checkbox">
+      <label for="agree-mobile" class="agree">I agree that all the details in the field above</label>
+    </div>
+
+
+     <button class="submit-btn">Submit</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
+
+
+    </div>
+  </div>
+    </div>
+    <div class="col-lg-4  warranty-box-right d-lg-block d-none ">
+      <div class="p-3 ">
+        <div class="my-4  ">
+        <label class="form-label servicelabel">Car Details</label>
+       
+         <div class="row mt-3">
+     <div class="col-6">
+<input type="text" name="vehicleno"  placeholder="Vehicle No." id="vehicleno" class="vnonber">
+
+
+     </div>
+
+     <div class="col-6">
+<input type="text" name="year"  placeholder="Year" id="year">
+
+     </div>
+    </div>
+
+
+     <div class="row my-3">
+            <div class="col-6">
+<select id="Brand" name="Brand" class="form-select Brand" >
+  <option value="" disabled selected>Brand</option>
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="BYD">BYD</option>
+  <option value="Chevrolet">Chevrolet</option>
+  <option value="Citroen">Citroen</option>
+  <option value="Datsun">Datsun</option>
+  <option value="Ford">Ford</option>
+  <option value="Hyundai">Hyundai</option>
+  <option value="Isuzu">Isuzu</option>
+  <option value="Jaguar">Jaguar</option>
+  <option value="Kia">Kia</option>
+  <option value="Land Rover">Land Rover</option>
+  <option value="Lexus">Lexus</option>
+  <option value="Mahindra">Mahindra</option>
+  <option value="Maruti Suzuki">Maruti Suzuki</option>
+  <option value="MG Motors">MG Motors</option>
+  <option value="Mercedes-Benz">Mercedes-Benz</option>
+  <option value="Mini Cooper">Mini Cooper</option>
+  <option value="Nissan">Nissan</option>
+  <option value="Porsche">Porsche</option>
+  <option value="Renault">Renault</option>
+  <option value="Skoda">Skoda</option>
+  <option value="Tata">Tata</option>
+  <option value="Toyota">Toyota</option>
+  <option value="Volkswagen">Volkswagen</option>
+  <option value="Volvo">Volvo</option>
+</select>
+
+
+            </div>
+                       <div class="col-6">
+<input type="text" name="color"  placeholder="Color" id="color">
+
+
+           </div>
+     
+    </div>
+
+
+    <div class="row">
+    <div class="col-6">
+  <select id="Model" class="form-select Model"  name="Model" >
+                      <option value="" selected>Model</option>
+                    </select>
+    </div>
+  <div
+                    class="col-6 otherModelContainer"
+                    id="otherModelContainer"
+                    style="display: none">
+                    <input
+                      type="text"
+                      id="OtherModel"
+                       name="OtherModel"
+                    class="OtherModel"
+                      placeholder="other model"/>
+                  </div>
+    </div>
+      </div>
+
+
+<div class="my-5">
+    <div class="file-upload">
+        <label class="form-label servicelabel ">Upload picture of vehicle*</label>
+    
+   <input type="file" id="fileUpload"  accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" name="image"  class="fileUpload" />
+
+   <small class="mb-3">Upload 1 supported file: PDF, document, or image. Max 1 GB</small>
+  <!-- Custom Label -->
+  <label for="fileUpload" class="file-label">
+<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_40_36)">
+<path d="M19.9832 13.9691C19.7083 13.9691 19.4853 14.1919 19.4853 14.4669V16.3693C19.4853 17.4673 18.592 18.3606 17.4939 18.3606H3.91141C2.81337 18.3606 1.92003 17.4673 1.92003 16.3693V14.4669C1.92003 14.1919 1.69715 13.9691 1.42217 13.9691C1.14719 13.9691 0.924316 14.1919 0.924316 14.4669V16.3693C0.924316 18.0163 2.26433 19.3564 3.91141 19.3564H17.4939C19.141 19.3564 20.481 18.0163 20.481 16.3693V14.4669C20.481 14.1919 20.2581 13.9691 19.9832 13.9691Z" fill="black"/>
+<path d="M4.44463 16.9264H16.9603C17.2353 16.9264 17.4582 16.7035 17.4582 16.4285C17.4582 16.1535 17.2353 15.9307 16.9603 15.9307H4.44463C4.16973 15.9307 3.94678 16.1535 3.94678 16.4285C3.94682 16.7035 4.16969 16.9264 4.44463 16.9264Z" fill="black"/>
+<path d="M6.36667 6.95321L10.2047 3.52452V13.1734C10.2047 13.4484 10.4277 13.6712 10.7026 13.6712C10.9776 13.6712 11.2005 13.4484 11.2005 13.1734V3.52452L15.0385 6.95321C15.1335 7.03804 15.252 7.07979 15.37 7.07979C15.5069 7.07979 15.6431 7.02368 15.7415 6.9136C15.9247 6.70852 15.9069 6.39386 15.7019 6.21063L11.5318 2.48531C11.0591 2.06304 10.3462 2.06297 9.87339 2.48531L5.70331 6.21063C5.49823 6.39378 5.48051 6.70852 5.6637 6.9136C5.84685 7.1186 6.16152 7.13648 6.36667 6.95321Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_40_36">
+<rect width="19.5567" height="19.5567" fill="white" transform="translate(0.924316 0.984131)"/>
+</clipPath>
+</defs>
+</svg>
+
+   <span> Add File</span>
+  </label>
+       <p class="fileNameDisplay" ></p>
+    </div> 
+</div>
+
+
+
+<div>
+   <label class="form-label servicelabel">Total Amount Paid</label>
+ <div class="amount-box">
+      <span>₹</span>
+      <input type="number" placeholder="Enter amount" name="amount" id="amount">
+    </div>
+
+</div>
+
+   <div class="checkbox mb-4">
+      <input type="checkbox" id="agree" class="agree-checkbox">
+      <label for="agree" class="agree ">I agree that all the details in the field above</label>
+    </div>
+
+
+     <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+  </form>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- <script>
+  const tagsContainer = document.getElementById("selectedTags");
+  const partsList = document.getElementById("partsList");
+  let selectedParts = [];
+
+  // Toggle dropdown on radio selection
+  function toggleDropdown() {
+    const full = document.querySelector('input[value="full"]');
+    const partial = document.querySelector('input[value="partial"]');
+    const dropdown = document.getElementById('partsDropdown');
+
+    if (partial.checked) {
+      dropdown.style.display = "block";
+    } else if (full.checked) {
+      dropdown.style.display = "none";
+      selectedParts = []; // clear selected parts
+      renderTags();       // remove tags
+      resetDropdownItems(); // reset dropdown text
+    }
+  }
+
+  // Reset dropdown items text
+  function resetDropdownItems() {
+    document.querySelectorAll("#partsList .dropdown-item").forEach(item => {
+      const value = item.getAttribute("data-value");
+      item.innerHTML = value; // remove checkmark
+    });
+  }
+
+  // Handle dropdown click
+  partsList.addEventListener("click", function (e) {
+    const item = e.target.closest(".dropdown-item");
+    if (!item) return;
+    e.preventDefault();
+
+    if (item.classList.contains("other-option")) {
+      if (!document.querySelector(".other-input")) {
+        const input = document.createElement("input");
+        input.type = "text";
+        input.placeholder = "Enter custom part";
+        input.classList.add("other-input", "form-control", "mt-2");
+        item.parentElement.insertAdjacentElement("afterend", input);
+        input.focus();
+
+        input.addEventListener("blur", function () {
+          const val = input.value.trim();
+          if (val) {
+            const newItem = document.createElement("li");
+            const newLink = document.createElement("a");
+            newLink.classList.add("dropdown-item");
+            newLink.href = "#";
+            newLink.setAttribute("data-value", val);
+            newLink.textContent = val;
+            newItem.appendChild(newLink);
+            partsList.insertBefore(newItem, partsList.lastElementChild);
+            toggleSelection(newLink, val);
+          }
+          input.remove();
+        });
+      }
+    } else {
+      const value = item.getAttribute("data-value");
+      toggleSelection(item, value);
+    }
+  });
+
+  // Select/unselect items
+  function toggleSelection(element, value) {
+    const index = selectedParts.indexOf(value);
+    if (index === -1) {
+      selectedParts.push(value);
+      element.innerHTML = value + ' <span class="checkmark">&#10003;</span>';
+    } else {
+      selectedParts.splice(index, 1);
+      element.innerHTML = value;
+    }
+    renderTags();
+  }
+
+  // Render tags
+  function renderTags() {
+    tagsContainer.innerHTML = "";
+    selectedParts.forEach(value => {
+      const tag = document.createElement("span");
+      tag.classList.add("tag");
+      tag.textContent = value;
+      tagsContainer.appendChild(tag);
+    });
+  }
+</script> -->
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+<script>
+  function initProtectionRadios(serviceBox) {
+  const dropdown = serviceBox.querySelector('.parts-dropdown');
+  const partsList = serviceBox.querySelector('.parts-list');
+  const tagsContainer = serviceBox.querySelector('.selected-tags');
+  let selectedParts = [];
+
+  if (!dropdown || !partsList || !tagsContainer) return; // safety
+
+  // Reset helpers
+  function resetDropdownItems() {
+    partsList.querySelectorAll('.dropdown-item').forEach(item => {
+      item.innerHTML = item.getAttribute('data-value');
+    });
+  }
+
+  function renderTags() {
+    tagsContainer.innerHTML = '';
+    selectedParts.forEach(val => {
+      const tag = document.createElement('span');
+      tag.classList.add('tag');
+      tag.textContent = val;
+      tagsContainer.appendChild(tag);
+    });
+  }
+
+  function toggleSelection(element, value) {
+    const index = selectedParts.indexOf(value);
+    if (index === -1) {
+      selectedParts.push(value);
+      element.innerHTML = value + ' <span class="checkmark">&#10003;</span>';
+    } else {
+      selectedParts.splice(index, 1);
+      element.innerHTML = value;
+    }
+    renderTags();
+  }
+
+  // Bind radio change
+  serviceBox.querySelectorAll('.protection-radio').forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (radio.value === 'partial' && radio.checked) {
+        dropdown.style.display = 'block';
+      } else if (radio.value === 'full' && radio.checked) {
+        dropdown.style.display = 'none';
+        selectedParts = [];
+        renderTags();
+        resetDropdownItems();
+      }
+    });
+  });
+
+  // Bind dropdown click
+  partsList.addEventListener('click', function (e) {
+    const item = e.target.closest('.dropdown-item');
+    if (!item) return;
+    e.preventDefault();
+
+    if (item.classList.contains('other-option')) {
+      if (!serviceBox.querySelector('.other-input')) {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.placeholder = 'Enter custom part';
+        input.classList.add('other-input', 'form-control', 'mt-2');
+        item.parentElement.insertAdjacentElement('afterend', input);
+        input.focus();
+
+        input.addEventListener('blur', function () {
+          const val = input.value.trim();
+          if (val) {
+            const newItem = document.createElement('li');
+            const newLink = document.createElement('a');
+            newLink.classList.add('dropdown-item');
+            newLink.href = '#';
+            newLink.setAttribute('data-value', val);
+            newLink.textContent = val;
+            newItem.appendChild(newLink);
+            partsList.insertBefore(newItem, partsList.lastElementChild);
+            toggleSelection(newLink, val);
+          }
+          input.remove();
+        });
+      }
+    } else {
+      toggleSelection(item, item.getAttribute('data-value'));
+    }
+  });
+}
+
+// Run on load
+document.querySelectorAll('.checkboxservice').forEach(initProtectionRadios);
+
+// Re-run whenever tab changes
+document.querySelectorAll('#serviceTabs button[data-bs-toggle="tab"]').forEach(tab => {
+  tab.addEventListener('shown.bs.tab', function () {
+    document.querySelectorAll('.checkboxservice').forEach(initProtectionRadios);
+  });
+});
+
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  });
+</script>
+
+
+
+
+<script>
+  const modelData = {
+  Audi: ["A3", "A3 Cabriolet", "A4", "A6", "A6 Matrix", "Q2", "Q3", "Q5", "Q7", "R8", "RS5", "RS6", "RS7 Sportback", "S5 Sportback", "TT"],
+  BMW: ["2 Series Gran Coupe", "3 Series", "3 Series GT", "4 Series", "5 Series", "5 Series GT", "6 Series", "7 Series", "8 Series", "i8", "M3", "M5", "X1", "X3", "X4", "X5", "X6", "Z4"],
+  BYD: ["Atto 3", "Seal", "E6", "Dolphin", "Tang", "Song Plus"],
+  Chevrolet: ["Aveo", "Aveo Old", "Aveo U-VA", "Beat", "Captiva", "Cruze", "Enjoy", "Forester", "Optra", "Optra Magnum", "Optra SRV", "Sail", "Sail Hatchback", "Sail U-VA", "Spark", "Tavera", "Trailblazer"],
+  Citroen: ["Basalt", "C3", "C3 AIRCROSS", "C5 Aircross"],
+  Datsun: ["GO", "Go Puls"],
+  Ford: ["Classic", "Escort", "Fiesta", "Fiesta Classic", "Freestyle", "Fusion", "Ikon", "Mondeo", "Mustang"],
+  Hyundai: ["Accent", "Accent Viva", "Alcazar", "Aura", "Creta", "Creta N-Line", "Elantra", "Eon", "Exter", "Getz", "Getz Prime", "Grand i10", "Grand i10 Nios", "i10", "i20", "Neo Fluidic Elantra", "New Santro 1.1", "Santa Fe", "Santro", "Santro Xing", "Sonata", "Sonata Embera", "Terracan", "Tucson", "Venue", "Venue N-Line", "Xcent"],
+  Isuzu: ["MU-X", "D-MAX V-Cross", "Hi-Lander", "S-Cab", "S-Cab Z"],
+  Jaguar: ["F-Pace", "E-Pace", "I-Pace", "XE", "XF", "XJ"],
+  Kia: ["Carens", "Carnival", "Seltos", "Sonet"],
+  "Land Rover": ["Discovery", "Discovery 3", "Discovery 4", "Discovery Sport", "Range Rover Evoque"],
+  Lexus: ["NX", "RX", "LX", "ES", "LS", "LC 500h", "LM"],
+  Mahindra: ["Alturas G4", "Armada", "Bolero", "Bolero Neo", "e20", "KUV100", "KUV100 NXT", "Marazzo", "Marshal", "NuvoSport", "Quanto", "REVAI", "Scorpio", "Scorpio Classic", "Scorpio Getaway", "Scorpio N", "Thar", "Thar Roxx", "TUV 300 PLUS", "TUV300", "Verito", "XUV 300", "XUV 300 TurboSport", "XUV 3XO", "XUV500", "XUV700", "Xylo"],
+  "Maruti Suzuki": ["1000", "800", "A-Star", "Alto", "Alto 800", "Baleno", "Brezza", "Celerio", "Celerio X", "Ciaz", "Dzire", "Eeco", "Esteem", "Estilo", "Fronx", "Grand Vitara", "Gypsy", "Ignis", "Invicto", "Jimny", "New Ertiga", "Omni", "Ritz", "S-Cross", "S-Presso", "Swift", "SX4", "Versa", "Wagon R", "XL6", "Zen", "Zen Estilo"],
+  "MG Motors": ["Astor", "Gloster", "Hector", "Hector Plus", "ZS EV"],
+  "Mercedes-Benz": ["A-Class", "AMG GT", "B-Class", "C-Class", "CLA", "E-Class", "E-Class Cabriolet", "GL", "GLA", "GLB", "GLC", "GLE", "GLE Coupe", "GLS", "ML-Class", "S-Coupe", "SL"],
+  "Mini Cooper": ["Cooper", "Countryman", "Cooper SE", "Countryman Electric"],
+  Nissan: ["350Z", "370Z", "Evalia", "Kicks", "Magnite", "Micra", "Micra Active", "Sunny", "Teana", "Terrano", "X-Trail"],
+  Porsche: ["Macan", "Cayenne", "911", "Panamera", "Taycan", "718", "Cayenne Coupe"],
+  Renault: ["Captur", "Duster", "Fluence", "Kiger", "Koleos", "Kwid", "Lodgy", "Logan", "Pulse", "Scala", "Triber"],
+  Skoda: ["Fabia", "Fabia Scout", "Karoq", "Kodiaq", "Kushaq", "Laura", "Octavia", "Octavia Combi", "Rapid", "Slavia", "Superb", "Superb Old", "Yeti"],
+  Tata: ["Altroz", "Aria", "Bolt", "Curvy", "Harrier", "Hexa", "Indica", "Indica V2", "Indica V2 Turbo", "Indica V2 Xeta", "Indica Vista", "Indica eV2", "Indicab", "Indigo", "Indigo CS", "Indigo XL", "Indigo eCS", "Indigo Marina", "Manza", "Movus", "Nano", "Nano GenX", "Nexon", "Nexon EV", "Nexon EV Max", "Nexon EV Prime", "Punch", "Safari", "Safari Storme", "Sierra", "Sumo", "Sumo Gold", "Sumo Grande", "Sumo Grande MK II", "Sumo Spacio", "Sumo Victa", "Tiago", "Tiago EV", "Tiago NRG", "Tigor", "Tigor EV", "Venture", "Vista Tech", "Xenon XT", "Zest"],
+  Toyota: ["Alphard", "Camry", "Celica", "Corolla", "Corolla Altis", "Corona", "Etios", "Etios Cross", "Etios Liva", "Fortuner", "Glanza", "Hilux", "Innova", "Innova Crysta", "Innova Hycross", "Land Cruiser", "Land Cruiser Prado", "Prius", "Qualis", "Rumion", "Urban Cruiser", "Urban Cruiser Hyryder", "Urban Cruiser Taisor", "Yaris"],
+  Volkswagen: ["1600", "Ameo", "Beetle", "Cross Polo", "Jetta", "Passat", "Phaeton", "Polo", "T-Roc", "Taigun", "Tiguan", "Tiguan AllSpace", "Touareg", "Virtus", "Vento"],
+  Volvo: ["XC90", "XC60", "XC40 Recharge", "C40 Recharge", "EX40", "EC40", "EX30", "S90"]
+};
+
+
+// Select all Brand, Model, OtherModel elements
+const brandSelects = document.querySelectorAll(".Brand");
+const modelSelects = document.querySelectorAll(".Model");
+const otherModelContainers = document.querySelectorAll(".otherModelContainer");
+const otherModelInputs = document.querySelectorAll(".OtherModel");
+
+// Loop through all Brand selects
+brandSelects.forEach((brandSelect, index) => {
+  const modelSelect = modelSelects[index];
+  const otherModelContainer = otherModelContainers[index];
+  const otherModelInput = otherModelInputs[index];
+
+  // Brand change
+  brandSelect.addEventListener("change", () => {
+    const selectedBrand = brandSelect.value;
+    modelSelect.innerHTML = '<option value="" selected disabled>Select Model</option>';
+
+    if (modelData[selectedBrand]) {
+      modelData[selectedBrand].forEach(model => {
+        const option = document.createElement("option");
+        option.value = model;
+        option.textContent = model;
+        modelSelect.appendChild(option);
+      });
+
+      const otherOption = document.createElement("option");
+      otherOption.value = "Other";
+      otherOption.textContent = "Other";
+      modelSelect.appendChild(otherOption);
+
+      modelSelect.disabled = false;
+    } else {
+      modelSelect.disabled = true;
+    }
+
+    // Hide Other input when brand changes
+    otherModelContainer.style.display = "none";
+    otherModelInput.value = "";
+    otherModelInput.required = false;
+  });
+
+  // Model change
+  modelSelect.addEventListener("change", () => {
+    if (modelSelect.value === "Other") {
+      otherModelContainer.style.display = "block";
+      otherModelInput.required = true;
+      otherModelInput.focus();
+    } else {
+      otherModelContainer.style.display = "none";
+      otherModelInput.value = "";
+      otherModelInput.required = false;
+    }
+  });
+});
+
+
+</script>
+
+
+
+
+
+<script>
+const storeList = [
+  "Agra",
+  "Ahmedabad",
+  "Aligarh",
+  "Ambience Mall",
+  "Bengaluru",
+  "Dimapur",
+  "Indore",
+  "Jaipur",
+  "Janakpuri",
+  "Lucknow",
+  "Mohali",
+  "Nagpur",
+  "Noida",
+  "Pacific Mall ,Subhash Nagar",
+  "Promenade Mall",
+  "Rudrapur",
+  "Surat",
+  "Udaipur",
+  "Vadodara"
+];
+
+// Sort alphabetically
+storeList.sort();
+
+const storeSelect = document.getElementById("Store");
+const otherStoreContainer = document.getElementById("otherStoreContainer");
+
+// Populate store dropdown
+storeList.forEach(store => {
+  const option = document.createElement("option");
+  option.value = store;
+  option.textContent = store;
+  storeSelect.appendChild(option);
+});
+
+// Add "Other" option
+const otherOption = document.createElement("option");
+otherOption.value = "Other";
+otherOption.textContent = "Other";
+storeSelect.appendChild(otherOption);
+
+// Show input if "Other" selected
+storeSelect.addEventListener("change", function() {
+  if (this.value === "Other") {
+    otherStoreContainer.style.display = "block";
+  } else {
+    otherStoreContainer.style.display = "none";
+  }
+});
+</script>
+
+
+
+<script>
+  flatpickr("#serviceDate", {
+  dateFormat: "d-m-Y", 
+  allowInput: true,
+  disableMobile: true
+});
+</script>
+
+
+
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Listen to tab change
+  const serviceTabs = document.querySelectorAll('#serviceTabs button[data-bs-toggle="tab"]');
+
+  serviceTabs.forEach(tab => {
+    tab.addEventListener('shown.bs.tab', function (e) {
+      const targetId = e.target.getAttribute("data-bs-target"); // Current active tab
+      const allPanes = document.querySelectorAll(".tab-pane");
+
+      allPanes.forEach(pane => {
+        if (pane.id !== targetId.replace("#", "")) {
+          // Reset all inputs in inactive services
+          pane.querySelectorAll("input, select, textarea").forEach(el => {
+            if (el.type === "radio" || el.type === "checkbox") {
+              el.checked = false;
+            } else {
+              el.value = "";
+            }
+          });
+
+          // Also hide dropdown if open
+          pane.querySelectorAll(".parts-dropdown").forEach(drop => {
+            drop.style.display = "none";
+          });
+
+          // Clear selected tags
+          pane.querySelectorAll(".selected-tags").forEach(tagBox => {
+            tagBox.innerHTML = "";
+          });
+        }
+      });
+    });
+  });
+});
+</script> 
+
+<!-- <script>
+
+document.querySelector("form").addEventListener("submit",async   function (e) {
+  e.preventDefault();
+
+  // ===== Customer Details =====
+  const customer = {
+    name: document.getElementById("fullname").value.trim(),
+    phone: document.getElementById("phone").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    address: document.getElementById("address").value.trim(),
+  };
+
+ 
+
+  // ===== Service Details =====
+  const mainService = document.querySelector("input[name='service']:checked")?.id || "";
+
+  let hardnessType = "";
+  if (mainService === "ppf") {
+    hardnessType = document.querySelector("input[name='Ppfservice']:checked")?.id || "";
+  } else if (mainService === "ceramic") {
+    hardnessType = document.querySelector("input[name='ccservice']:checked")?.id || "";
+  } else if (mainService === "graphene") {
+    hardnessType = document.querySelector("input[name='grservice']:checked")?.id || "";
+  }
+
+  const subService = document.querySelector("input[name='Subservice']:checked")?.id || "";
+  const coverage = document.querySelector("input[name='protection1']:checked")?.value || "";
+
+  let selectedParts = [];
+  if (coverage === "partial") {
+    selectedParts = [...document.querySelectorAll(".selected-tags span")].map(tag => tag.innerText);
+  }
+
+  // ===== Car Details =====
+const car = {
+  vehicleNo: document.querySelector("#vehicleno")?.value || document.querySelector("#vehicleno_mobile")?.value || "",
+  year: document.querySelector("#year")?.value || document.querySelector("#year_mobile")?.value || "",
+  brand: document.querySelector("#Brand")?.value || document.querySelector("#Brand_mobile")?.value || "",
+  color: document.querySelector("#color")?.value || document.querySelector("#color_mobile")?.value || "",
+  model: document.querySelector("#Model")?.value || document.querySelector("#Model_mobile")?.value || "",
+  image: document.querySelector("#fileUpload")?.value || document.querySelector("#fileUpload_mobile")?.value || "",
+  totalAmount: document.querySelector("#amount")?.value || document.querySelector("#amount_mobile")?.value || "",
+};
+
+const fileInput = document.getElementById('imgFile');
+    if(fileInput.files[0]){
+      const reader = new FileReader();
+      reader.onload = function(){
+        const base64 = reader.result.split(',')[1];
+        formData.append('img', base64);
+        sendToGoogle(formData);
+      };
+      reader.readAsDataURL(fileInput.files[0]);
+    } else {
+      sendToGoogle(formData);
+    }
+  });
+
+  // ===== Final Structured Data =====
+  const formData = {
+    customer,
+    serviceDetails: {
+      serviceName: mainService,
+      hardnessType,
+      seriesOrYear: subService,
+      coverage,
+      selectedParts
+    },
+    car
+  };
+
+  console.log("Form Data:", formData);
+
+  // ===== Send to Google Sheet =====
+  fetch("https://script.google.com/macros/s/AKfycbwONd8h-eLu5dUFLxPqvb_TbuA06r3EYmHEaIjPGbiluamfENiH11D36bM3n-9Qkc8FLw/exec", {
+    method: "POST",
+    mode: "no-cors", // hides response
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData)
+  })
+  .then(() => alert("Data saved to Google Sheet!"))
+  .catch(err => console.error("Error sending data:", err));
+});
+</script> -->
+
+
+<script>
+
+const fileInputs = document.querySelectorAll(".fileUpload");
+
+fileInputs.forEach(input => {
+  input.addEventListener("change", function() {
+    const wrapper = input.closest(".file-upload");
+    const labelSpan = wrapper.querySelector("label span");
+    const fileNameDisplay = wrapper.querySelector(".fileNameDisplay");
+
+    if (input.files.length > 0) {
+      fileNameDisplay.textContent = input.files[0].name;
+      labelSpan.textContent = "Attached File";
+    } else {
+      fileNameDisplay.textContent = "";
+      labelSpan.textContent = "Add File";
+    }
+  });
+});
+
+
+document.querySelector("form").addEventListener("submit", async function(e) {
+
+  e.preventDefault();
+
+
+
+
+  
+  // ===== Customer Details =====
+  const customer = {
+    name: document.getElementById("fullname").value.trim(),
+    phone: document.getElementById("phone").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    address: document.getElementById("address").value.trim(),
+  };
+
+  // ===== Service Date & Store =====
+  const serviceDate = document.getElementById("serviceDate")?.value || "";
+  const storeOutlet = document.getElementById("Store")?.value || "";
+
+  // Store value handle (Other option)
+  let storeValue = storeOutlet;
+  if (storeValue === "Other") {
+    const otherStoreInput = document.getElementById("OtherStore")?.value || "";
+    storeValue = otherStoreInput;
+  }
+
+  // ===== Service Details =====
+  const mainService = document.querySelector("input[name='service']:checked")?.id || "";
+
+  let hardnessType = "";
+  if (mainService === "ppf") {
+    hardnessType = document.querySelector("input[name='Ppfservice']:checked")?.id || "";
+  } else if (mainService === "ceramic") {
+    hardnessType = document.querySelector("input[name='ccservice']:checked")?.id || "";
+  } else if (mainService === "graphene") {
+    hardnessType = document.querySelector("input[name='grservice']:checked")?.id || "";
+  }
+
+  const subService = document.querySelector("input[name='Subservice']:checked")?.id || "";
+  const coverage = document.querySelector("input[name='protection1']:checked")?.value || "";
+
+  let selectedParts = [];
+  if (coverage === "partial") {
+    selectedParts = [...document.querySelectorAll(".selected-tags span")].map(tag => tag.innerText);
+  }
+
+  // ===== Car Details =====
+  let car = {
+    vehicleNo: document.querySelector("#vehicleno")?.value || document.querySelector("#vehicleno_mobile")?.value || "",
+    year: document.querySelector("#year")?.value || document.querySelector("#year_mobile")?.value || "",
+    brand: document.querySelector("#Brand")?.value || document.querySelector("#Brand_mobile")?.value || "",
+    color: document.querySelector("#color")?.value || document.querySelector("#color_mobile")?.value || "",
+    model: document.querySelector("#Model")?.value || document.querySelector("#Model_mobile")?.value || "",
+    image: "",
+    totalAmount: document.querySelector("#amount")?.value || document.querySelector("#amount_mobile")?.value || "",
+  };
+
+  // Model value handle (Other option)
+let modelValue = car.model;
+
+// Agar "Other" hai toh sahi input ki value lo
+if (modelValue === "Other") {
+  // jitne bhi OtherModel inputs hain unko check karo
+  const otherModelInputs = document.querySelectorAll(".OtherModel");
+  otherModelInputs.forEach(input => {
+    if (input.value.trim() !== "") {
+      modelValue = input.value.trim(); // jo filled hoga wo le lo
+    }
+  });
+}
+
+car.model = modelValue;
+
+
+
+  // ===== Validation with SweetAlert =====
+  if (!customer.name || !customer.phone || !customer.email || !customer.address) {
+    Swal.fire("Missing Fields", "Please fill all customer details.",);
+    return;
+  }
+  // ===== Phone Validation =====
+let phoneRegex = /^[0-9]{10}$/;  // exactly 10 digits
+if (!phoneRegex.test(customer.phone)) {
+  Swal.fire("Invalid Phone", "Please enter a valid 10-digit phone number.", );
+  return;
+}
+
+// ===== Email Validation =====
+let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(customer.email)) {
+  Swal.fire("Invalid Email", "Please enter a valid email address.", );
+  return;
+}
+  if (!mainService) {
+    Swal.fire("Service Required", "Please select a service.", );
+    return;
+  }
+  if (!hardnessType) {
+    Swal.fire("Service Type Required", "Please select service type / hardness.", );
+    return;
+  }
+  if (!subService) {
+    Swal.fire("Series/Year Required", "Please select series/year.", );
+    return;
+  }
+  if (!coverage) {
+    Swal.fire("Coverage Required", "Please select coverage (Full/Partial).", );
+    return;
+  }
+  if (coverage === "partial" && selectedParts.length === 0) {
+    Swal.fire("Parts Required", "Please select parts for partial coverage.", );
+    return;
+  }
+  if (!car.vehicleNo && !car.year && !car.brand && !car.model && !car.color) {
+    Swal.fire("Car Details Missing", "Please fill all car details.", );
+    return;
+  }
+  if (!car.vehicleNo) {
+  Swal.fire("Car Number Required", "Please enter vehicle number.", );
+  return;
+}
+let vehicleRegex = /^[A-Za-z0-9]+$/;  // sirf letters aur numbers
+if (!vehicleRegex.test(car.vehicleNo) || car.vehicleNo.length < 6) {
+  Swal.fire("Invalid Vehicle Number", "Vehicle number must be at least 6 characters (letters and numbers only).", );
+  return;
+}
+if (!car.year) {
+  Swal.fire("Car Year Required", "Please enter car year.", );
+  return;
+}
+if (!car.brand) {
+  Swal.fire("Car Brand Required", "Please select car brand.", );
+  return;
+}
+if (!car.model) {
+  Swal.fire("Car Model Required", "Please enter car model.", );
+  return;
+}
+if (!car.color) {
+  Swal.fire("Car Color Required", "Please enter car color.", );
+  return;
+}
+
+// image: "",
+  if (!car.totalAmount) {
+    Swal.fire("Amount Required", "Please enter total amount.", );
+    return;
+  }
+  if (!serviceDate) {
+    Swal.fire("Date Required", "Please select service date.", );
+    return;
+  }
+  if (!storeValue) {
+    Swal.fire("Store Required", "Please select or enter store outlet.", );
+    return;
+  }
+
+
+  // ===== Handle Image =====
+const desktopFile = document.getElementById("fileUpload")?.files[0];
+const mobileFile = document.getElementById("fileUpload_mobile")?.files[0];
+
+if (!desktopFile && !mobileFile) {
+  Swal.fire("Car Image Required", "Please upload car image.", );
+  return;
+}
+
+   const agreeCheckboxDesktop = document.querySelector("#agree");
+const agreeCheckboxMobile = document.querySelector("#agree-mobile");
+
+// Validate if any checkbox is checked
+if (!agreeCheckboxDesktop.checked && !agreeCheckboxMobile.checked) {
+    Swal.fire("Agreement Required", "Please agree to the terms and conditions.");
+    return;
+}
+
+
+// Jo bhi file hai usko use karo
+const fileToUpload = desktopFile || mobileFile;
+  if (fileToUpload) {
+    const reader = new FileReader();
+    reader.onload = async function() {
+    car.image = reader.result;
+      await sendToGoogle({
+        customer,
+        serviceDetails: {
+          serviceName: mainService,
+          hardnessType,
+          seriesOrYear: subService,
+          coverage,
+          selectedParts,
+          serviceDate,
+          storeOutlet: storeValue
+        },
+        car
+      });
+    };
+    reader.readAsDataURL(fileToUpload);
+  } else {
+    await sendToGoogle({
+      customer,
+      serviceDetails: {
+        serviceName: mainService,
+        hardnessType,
+        seriesOrYear: subService,
+        coverage,
+        selectedParts,
+        serviceDate,
+        storeOutlet: storeValue
+      },
+      car
+    });
+  }
+});
+
+// ===== Function to send data to Google Apps Script =====
+async function sendToGoogle(formData) {
+  const submitBtns = document.querySelectorAll(".submit-btn");
+
+// ✅ Disable all buttons and show processing
+submitBtns.forEach(btn => {
+  if (!btn.disabled) {
+    btn.disabled = true;
+    btn.dataset.originalText = btn.textContent; // original text save karo
+    btn.textContent = "Processing...";
+  }
+});
+  try {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbxBRch3w_--UwOQbzhY_Ngps64LixOQkdN0ayhpglUBbBcgTCBeFshIBm_5jw9OrDm58g/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
+    });
+ Swal.fire("Success!", "Data has been saved successfully.", "success");
+    document.querySelector("form").reset();
+
+      const fileInputs = document.querySelectorAll(".fileUpload");
+        fileInputs.forEach(input => {
+            input.value = ''; // Clear file input
+            const wrapper = input.closest(".file-upload");
+            const labelSpan = wrapper.querySelector("label span");
+            const fileNameDisplay = wrapper.querySelector(".fileNameDisplay");
+            fileNameDisplay.textContent = ''; // Clear file name
+            labelSpan.textContent = 'Add File'; // Reset label text
+        });
+
+    submitBtns.forEach(btn => {
+  btn.disabled = false;
+  btn.textContent = btn.dataset.originalText; // restore text
+});
+  } catch (err) {
+    console.error("Error sending data:", err);
+  }
+}
+
+</script>
+
+
+
+
+  </body>
+
+</html>
